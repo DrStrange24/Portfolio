@@ -1,10 +1,20 @@
 import "./App.css";
+import {
+  Certificates,
+  Educations,
+  Introduction,
+  Projects,
+  WorkHistory,
+} from "./components";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
-      <div>Test</div>
+      <Introduction />
+      <WorkHistory />
+      <Projects />
+      <Educations />
+      <Certificates />
     </div>
   );
 }
