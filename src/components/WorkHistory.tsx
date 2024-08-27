@@ -14,6 +14,7 @@ const WorkExperience = (props: {
   return (
     <>
       <h1>WorkExperience</h1>
+      <Projects title={""} content={""} />
     </>
   );
 };
