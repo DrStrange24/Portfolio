@@ -1,28 +1,14 @@
 import "./App.css";
-import {
-  Certificates,
-  Educations,
-  Introduction,
-  Projects,
-  WorkHistory,
-} from "./components";
 import { ThemeProvider } from "./theme/ThemeContext";
-import ThemeToggle from "./components/ThemeToggle";
+import "./styles/variables.scss";
 import "./styles/index.scss";
+import { Home } from "./pages/Home";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+export const App = () => {
   return (
     <ThemeProvider>
-      <div className="App">
-        <Introduction />
-        <WorkHistory />
-        <Projects />
-        <Educations />
-        <Certificates />
-        <ThemeToggle />
-      </div>
+      <Home />
     </ThemeProvider>
   );
-}
-
-export default App;
+};
