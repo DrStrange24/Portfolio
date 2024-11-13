@@ -6,7 +6,19 @@ body {
   transition: background-color 0.3s, color 0.3s;
 
   .navbar {
-    background-color: var(--background-color) !important;
+    background-color: var(--nav-bg) !important;
+
+    .nav-link {
+      color: var(--nav-text);
+
+      &.active {
+        color: var(--nav-text-active);
+      }
+    }
+  }
+
+  .home-main {
+    background-color: var(--background-color);
   }
 }
 

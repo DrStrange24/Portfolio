@@ -1,4 +1,9 @@
 :root {
+  // Light Theme
+  --nav-bg: #f8f9fa; // Light gray background
+  --nav-text: #343a40; // Dark gray text
+  --nav-text-active: #007bff; // Blue accent for active nav link
+
   --background-color: #ffffff;
   --text-color: #333333;
 
@@ -7,6 +12,11 @@
 }
 
 [data-theme="dark"] {
+  // Dark Theme
+  --nav-bg: #343a40; // Dark gray background
+  --nav-text: #f8f9fa; // Light gray text
+  --nav-text-active: #17a2b8; // Teal accent for active nav link
+
   --background-color: #121212;
   --text-color: #ffffff;
 
