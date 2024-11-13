@@ -3,7 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 export const Projects = () => {
   return (
     <>
-      <h1>Projects</h1>
       <Container>
         <Row>
           <Col>

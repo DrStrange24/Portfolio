@@ -5,6 +5,7 @@ export const Introduction = (): JSX.Element => {
   return (
     <Container className="mt-5">
       <Row className="align-items-center">
+        <h2>Introduction</h2>
         <Col md={4} className="text-center">
           <Image src={profileImage} alt="profile image" roundedCircle fluid />
         </Col>

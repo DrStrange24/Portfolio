@@ -19,16 +19,16 @@ export const Home = () => {
         <section id="work-history" className="py-5 bg-light">
           <WorkHistory />
         </section>
-        <section id="projects" className="py-5">
+        <section id="projects" className="py-5 ">
           <Projects />
         </section>
         <section id="educations" className="py-5 bg-light">
           <Educations />
         </section>
-        <section id="certificates" className="py-5 bg-light">
+        <section id="certificates" className="py-5">
           <Certificates />
         </section>
-        <section id="contact" className="py-5">
+        <section id="contact" className="py-5 bg-light">
           <Contact />
         </section>
       </main>

@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 const Projects = (props: { title: string; content: string }) => {
   return (
     <>
-      <h1>wait</h1>
+      <h2>Coming Soon!</h2>
     </>
   );
 };
@@ -15,7 +15,7 @@ const WorkExperience = (props: {
 }) => {
   return (
     <>
-      <h1>WorkExperience</h1>
+      <h1>Work Experience</h1>
       <Projects title={""} content={""} />
     </>
   );
@@ -24,12 +24,11 @@ const WorkExperience = (props: {
 export const WorkHistory = () => {
   return (
     <>
-      <h1>WorkHistory</h1>
-      <WorkExperience company={""} title={""} content={""} />
       <Container>
         <Row>
           <Col>
             <h2>About Me</h2>
+            <WorkExperience company={""} title={""} content={""} />
             <p>
               Brief intro about yourself and your background, skills, or
               experience.

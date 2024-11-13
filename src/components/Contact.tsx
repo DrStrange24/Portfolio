@@ -3,7 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 export const Contact = () => {
   return (
     <>
-      <h1>Contact</h1>
       <Container>
         <Row>
           <Col>
