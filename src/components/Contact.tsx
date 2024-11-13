@@ -31,7 +31,7 @@ export const Contact = () => {
               <Row className="justify-content-center">
                 <Col xs="auto">
                   <a
-                    href="https://www.linkedin.com/in/your-profile"
+                    href="https://www.linkedin.com/in/jeremy-brynn-bacuta-b834a232b/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-primary btn-linkedin mx-2"
@@ -41,7 +41,7 @@ export const Contact = () => {
                 </Col>
                 <Col xs="auto">
                   <a
-                    href="https://github.com/your-github-profile"
+                    href="https://github.com/DrStrange24"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-dark btn-github mx-2"
@@ -51,7 +51,7 @@ export const Contact = () => {
                 </Col>
                 <Col xs="auto">
                   <a
-                    href="https://www.turing.com/your-profile"
+                    href="https://matching.turing.com/developer-resume-preview/714217e70e62b28a8c2b89806bd0071552764664e1f2cb"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-info mx-2"
@@ -61,7 +61,7 @@ export const Contact = () => {
                 </Col>
                 <Col xs="auto">
                   <a
-                    href="/path-to-your-resume.pdf"
+                    href="https://drive.google.com/file/d/1aEMUmkoBa3079VWtBW23-IK5ErN79G3p/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-success btn-resume mx-2"
