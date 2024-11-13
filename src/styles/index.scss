@@ -8,6 +8,10 @@ body {
   .navbar {
     background-color: var(--nav-bg) !important;
 
+    .nav-name {
+      color: var(--nav-text);
+    }
+
     .nav-link {
       color: var(--nav-text);
 
@@ -15,14 +19,19 @@ body {
         color: var(--nav-text-active);
       }
     }
+
+    .theme-icon-button {
+      background-color: var(--nav-bg-icon-color);
+      color: var(--nav-icon-color);
+
+      &:hover {
+        background-color: var(--nav-bg-icon-hover-color);
+        color: var(--nav-icon-hover-color);
+      }
+    }
   }
 
   .home-main {
     background-color: var(--background-color);
   }
-}
-
-button {
-  background-color: var(--button-bg-color);
-  color: var(--button-text-color);
 }

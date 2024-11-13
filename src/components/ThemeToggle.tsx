@@ -8,7 +8,12 @@ export const ThemeToggle = () => {
 
   return (
     <Dropdown align="end">
-      <Dropdown.Toggle variant="outline-light" id="theme-toggle" size="sm">
+      <Dropdown.Toggle
+        className="theme-icon-button"
+        variant="outline-light"
+        id="theme-toggle"
+        size="sm"
+      >
         <FontAwesomeIcon
           icon={
             theme === "dark" ? faMoon : theme === "light" ? faSun : faDesktop

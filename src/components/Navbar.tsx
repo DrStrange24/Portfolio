@@ -5,7 +5,9 @@ export const CustomNavbar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">Jeremy Brynn Bacuta</Navbar.Brand>
+        <Navbar.Brand href="#home" className="nav-name">
+          Portfolio
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
