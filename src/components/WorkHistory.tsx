@@ -1,3 +1,5 @@
+import { Col, Container, Row } from "react-bootstrap";
+
 const Projects = (props: { title: string; content: string }) => {
   return (
     <>
@@ -24,6 +26,17 @@ export const WorkHistory = () => {
     <>
       <h1>WorkHistory</h1>
       <WorkExperience company={""} title={""} content={""} />
+      <Container>
+        <Row>
+          <Col>
+            <h2>About Me</h2>
+            <p>
+              Brief intro about yourself and your background, skills, or
+              experience.
+            </p>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };
