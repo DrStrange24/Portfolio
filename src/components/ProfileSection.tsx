@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { CustomButton } from "./Button";
-// import profileImage from "../assets/profile.jpg";
+import profileImage from "../assets/images/profile.jpg";
 
 export const ProfileSection = () => {
   return (
@@ -16,7 +16,7 @@ export const ProfileSection = () => {
           <CustomButton text="Let's get started" />
         </Col>
         <Col md={6}>
-          <Image src={""} roundedCircle width="200" height="200" />
+          <Image src={profileImage} roundedCircle width="400" height="400" />
         </Col>
       </Row>
     </Container>
