@@ -10,11 +10,11 @@
   --nav-icon-color: #{$text};
   --nav-icon-hover-color: #{$bg};
 
-  --background-color: #ffffff;
-  --text-color: #333333;
-
-  --button-bg-color: #28a745;
-  --button-text-color: #ffffff;
+  // Light Theme Colors
+  --section-bg-primary-color: #f8f9fa; // Light gray
+  --section-bg-secondary-color: #ffffff; // White
+  --section-text-primary-color: #343a40; // Dark gray for primary text
+  --section-text-secondary-color: #495057; // Slightly lighter gray for secondary text
 }
 
 [data-theme="dark"] {
@@ -29,9 +29,9 @@
   --nav-icon-color: #{$text};
   --nav-icon-hover-color: #{$bg};
 
-  --background-color: #121212;
-  --text-color: #ffffff;
-
-  --button-bg-color: #28a745;
-  --button-text-color: #ffffff;
+  // Dark Theme Colors
+  --section-bg-primary-color: #2c2f33; // Dark gray
+  --section-bg-secondary-color: #23272a; // Slightly lighter dark gray
+  --section-text-primary-color: #f8f9fa; // Light gray for primary text
+  --section-text-secondary-color: #adb5bd; // Slightly darker gray for secondary text
 }

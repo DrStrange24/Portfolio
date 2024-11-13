@@ -32,6 +32,15 @@ body {
   }
 
   .home-main {
-    background-color: var(--background-color);
+    margin-top: 0px !important;
+    .section-bg-primary {
+      background-color: var(--section-bg-primary-color);
+      color: var(--section-text-primary-color);
+    }
+
+    .section-bg-secondary {
+      background-color: var(--section-bg-secondary-color);
+      color: var(--section-text-secondary-color);
+    }
   }
 }
