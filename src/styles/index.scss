@@ -134,6 +134,16 @@ body {
             color: #fff;
           }
         }
+
+        &.btn-leetcode {
+          border-color: #a5a728;
+          color: #a79a28;
+
+          &:hover {
+            background-color: #a79f28;
+            color: #fff;
+          }
+        }
       }
     }
   }

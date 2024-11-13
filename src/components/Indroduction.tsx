@@ -22,25 +22,6 @@ export const Introduction = (): JSX.Element => {
             contribute to innovative projects at a forward-thinking
             organization.
           </p>
-          <Row>
-            <Col>
-              <Button
-                href="https://storage.googleapis.com/turing_developers/resume/1724056564338_2802670_jbrynnbacuta.pdf"
-                variant="secondary"
-                className="me-2"
-              >
-                Resume
-              </Button>
-            </Col>
-            <Col>
-              <Button
-                href="https://matching.turing.com/developer-resume-preview/714217e70e62b28a8c2b89806bd0071552764664e1f2cb"
-                variant="secondary"
-              >
-                Turing Profile
-              </Button>
-            </Col>
-          </Row>
         </Col>
       </Row>
     </Container>

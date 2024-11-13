@@ -69,6 +69,16 @@ export const Contact = () => {
                     Resume
                   </a>
                 </Col>
+                <Col xs="auto">
+                  <a
+                    href="https://leetcode.com/u/jeremy2429/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-success btn-leetcode mx-2"
+                  >
+                    LeetCode
+                  </a>
+                </Col>
               </Row>
             </div>
           </Col>
