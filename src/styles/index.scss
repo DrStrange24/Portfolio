@@ -43,4 +43,98 @@ body {
       color: var(--section-text-secondary-color);
     }
   }
+
+  .contact-section {
+    background-color: var(--section-bg-secondary-color);
+    color: var(--section-text-secondary-color);
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f8f9fa;
+    }
+
+    p {
+      color: #adb5bd; // Light gray for subtitle text
+    }
+
+    // Styling for contact info card (ListGroup)
+    .contact-info {
+      background-color: #2c2f33; // Darker background for contrast
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); // Shadow for depth
+      color: #f8f9fa; // Text color for readability
+
+      a {
+        color: #1a73e8; // Light blue for links
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+          color: #64b5f6; // Lighter blue on hover
+        }
+      }
+
+      .list-group-item {
+        background-color: transparent; // Transparent background to match dark theme
+        border: none; // Remove borders between items for a cleaner look
+        padding: 0.75rem 0; // Padding for better spacing
+        color: var(--section-text-secondary-color);
+      }
+    }
+
+    // Styling for buttons in the "Connect with Me" section
+    .contact-links {
+      .btn {
+        border-color: #1a73e8;
+        color: #1a73e8;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #1a73e8; // Fill color on hover
+          color: #fff;
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 0.2rem rgba(26, 115, 232, 0.5); // Outline effect
+        }
+
+        // Example of specific color for each button if needed
+        &.btn-linkedin {
+          border-color: #0077b5;
+          color: #0077b5;
+
+          &:hover {
+            background-color: #0077b5;
+            color: #fff;
+          }
+        }
+
+        &.btn-github {
+          border-color: #6e5494;
+          color: #6e5494;
+
+          &:hover {
+            background-color: #6e5494;
+            color: #fff;
+          }
+        }
+
+        &.btn-resume {
+          border-color: #28a745;
+          color: #28a745;
+
+          &:hover {
+            background-color: #28a745;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }

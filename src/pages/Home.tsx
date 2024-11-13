@@ -28,9 +28,7 @@ export const Home = () => {
         <section id="certificates" className="py-5 section-bg-primary">
           <Certificates />
         </section>
-        <section id="contact" className="py-5 section-bg-secondary">
-          <Contact />
-        </section>
+        <Contact />
       </main>
     </>
   );
