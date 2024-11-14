@@ -147,4 +147,25 @@ body {
       }
     }
   }
+
+  .certificate-section {
+    .accordion-button {
+      background-color: var(--section-bg-secondary-color);
+      color: var(--section-text-primary-color);
+
+      &::after {
+        background-color: var(--section-text-primary-color);
+        border-radius: 5px;
+      }
+    }
+
+    .accordion-collapse {
+      background-color: var(--section-bg-primary-color);
+
+      .card-body {
+        background-color: var(--section-bg-secondary-color);
+        color: var(--section-text-primary-color);
+      }
+    }
+  }
 }

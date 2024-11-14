@@ -47,7 +47,10 @@ const CertificateCard = ({
 
 export const Certificates = () => {
   return (
-    <section id="certificates" className="py-5 section-bg-primary">
+    <section
+      id="certificates"
+      className="py-5 section-bg-primary certificate-section"
+    >
       <Container>
         <h2 className="text-center mb-4">Certificates</h2>
         <Accordion defaultActiveKey="0">
