@@ -98,3 +98,13 @@ export const certificates: CertificateProps[] = [
     link: "https://drive.google.com/file/d/1OCLKS6JLBudxJonQTHNR6S_KgoCYZ7uN/view?usp=drive_link",
   },
 ];
+
+// Sort certificates by `issueDate` in descending order
+certificates.sort((a, b) => {
+  // Use a fallback date for undefined values (e.g., January 1, 1970)
+  const dateA = a.issueDate ? new Date(a.issueDate).getTime() : 0;
+  const dateB = b.issueDate ? new Date(b.issueDate).getTime() : 0;
+
+  // Sort in descending order
+  return dateB - dateA;
+});

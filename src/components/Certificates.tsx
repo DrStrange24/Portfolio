@@ -56,7 +56,9 @@ export const Certificates = () => {
         <Accordion defaultActiveKey="0">
           {certificates.map((certificate: CertificateProps, index) => (
             <Accordion.Item eventKey={index.toString()} key={certificate.id}>
-              <Accordion.Header>{certificate.title}</Accordion.Header>
+              <Accordion.Header>
+                {certificate.issueDate} - {certificate.title}
+              </Accordion.Header>
               <Accordion.Body>
                 <CertificateCard
                   title={certificate.title}
