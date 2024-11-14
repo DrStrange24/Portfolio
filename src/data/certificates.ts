@@ -14,7 +14,7 @@ export const certificates: CertificateProps[] = [
   },
   {
     id: 2,
-    title: "2024 Common Threats",
+    title: "Common Threats",
     issueDate: "Feb 2024",
     type: "pdf",
     link: "https://drive.google.com/file/d/1W5CYnVTlb0MX9fxgQXXkty48vnqaIrjX/view?usp=drive_link",
@@ -70,7 +70,7 @@ export const certificates: CertificateProps[] = [
   },
   {
     id: 10,
-    title: "2023 Kevin Mitnick Security Awareness Training",
+    title: "Kevin Mitnick Security Awareness Training",
     issueDate: "Sep 2023",
     type: "pdf",
     link: "https://drive.google.com/file/d/1wh1ZyM07Aq0voUwucXyN1ltMlWFMmPt_/view?usp=drive_link",
@@ -78,7 +78,7 @@ export const certificates: CertificateProps[] = [
   {
     id: 11,
     title: "Sense Software Solutions Certificate of Employment",
-    issueDate: "Feb 2024",
+    issueDate: "Feb 06, 2024",
     type: "pdf",
     link: "https://drive.google.com/file/d/1ISMjir1obp_eYN4Ana-fFzdKGoBG6CEG/view?usp=drive_link",
   },
@@ -93,7 +93,7 @@ export const certificates: CertificateProps[] = [
     //multiple certificate sessions
     id: 13,
     title: "Youth for Information Technology 2021 Day 1 - 3",
-    issueDate: "Feb 2024",
+    issueDate: "Oct 2021",
     type: "pdf",
     link: "https://drive.google.com/file/d/1OCLKS6JLBudxJonQTHNR6S_KgoCYZ7uN/view?usp=drive_link",
   },

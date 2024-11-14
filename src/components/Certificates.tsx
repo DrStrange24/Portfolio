@@ -3,6 +3,7 @@ import { certificates } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf, faImage } from "@fortawesome/free-solid-svg-icons";
 import { CertificateProps } from "../data";
+import { formatDate } from "../utils/formatDate";
 
 export interface CertificateCardProps {
   title: string;
@@ -57,7 +58,7 @@ export const Certificates = () => {
           {certificates.map((certificate: CertificateProps, index) => (
             <Accordion.Item eventKey={index.toString()} key={certificate.id}>
               <Accordion.Header>
-                {certificate.issueDate} - {certificate.title}
+                {formatDate(certificate.issueDate)} - {certificate.title}
               </Accordion.Header>
               <Accordion.Body>
                 <CertificateCard
