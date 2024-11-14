@@ -1,5 +1,7 @@
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import { socialLinks } from "../data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const Contact = () => {
   return (
@@ -7,7 +9,10 @@ export const Contact = () => {
       <Container>
         <Row>
           <Col md={8} lg={6} className="mx-auto text-center">
-            <h2>Contact</h2>
+            <h2>
+              <FontAwesomeIcon icon={faEnvelope} className="me-2" />
+              Contact
+            </h2>
             <p>I’d love to hear from you! Here’s how you can reach me:</p>
 
             {/* Contact Info */}

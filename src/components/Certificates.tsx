@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf, faImage } from "@fortawesome/free-solid-svg-icons";
 import { CertificateProps } from "../data";
 import { formatDate } from "../utils/formatDate";
+import { faAward } from "@fortawesome/free-solid-svg-icons";
 
 export interface CertificateCardProps {
   title: string;
@@ -53,7 +54,11 @@ export const Certificates = () => {
       className="py-5 section-bg-primary certificate-section"
     >
       <Container>
-        <h2 className="text-center mb-4">Certificates</h2>
+        <h2 className="text-center mb-4">
+          {" "}
+          <FontAwesomeIcon icon={faAward} className="me-2" />
+          Certificates
+        </h2>
         <Accordion defaultActiveKey="0">
           {certificates.map((certificate: CertificateProps, index) => (
             <Accordion.Item eventKey={index.toString()} key={certificate.id}>
