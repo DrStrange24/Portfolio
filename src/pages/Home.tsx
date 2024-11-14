@@ -1,12 +1,12 @@
-import { CustomNavbar } from "../components/Navbar";
 import {
   Contact,
   Educations,
   Introduction,
   Projects,
   WorkHistory,
+  Certificates,
+  CustomNavbar,
 } from "../components";
-import { Certificates } from "../components/Certificates";
 
 export const Home = () => {
   return (

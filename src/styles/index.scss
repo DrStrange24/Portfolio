@@ -195,5 +195,36 @@ body {
         font-size: 0.9rem; // Smaller font for dates
       }
     }
+
+    .projects-section {
+      background-color: #1c1e21; // Dark background color
+      padding: 2rem 0;
+
+      h2 {
+        color: #f8f9fa; // Light color for section title
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .project-card {
+        background-color: #2c2f33; // Darker color for project cards
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Soft shadow for depth
+
+        .text-light {
+          color: #f8f9fa; // Light color for card title
+        }
+
+        .text-muted {
+          color: #adb5bd !important; // Muted color for description text
+        }
+
+        .badge {
+          background-color: #495057; // Darker badge background
+          color: #f8f9fa; // Light color for text
+        }
+      }
+    }
   }
 }
