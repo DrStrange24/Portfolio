@@ -1,4 +1,5 @@
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
+import { socialLinks } from "../data";
 
 export const Contact = () => {
   return (
@@ -31,7 +32,7 @@ export const Contact = () => {
               <Row className="justify-content-center">
                 <Col xs="auto">
                   <a
-                    href="https://www.linkedin.com/in/jeremy-brynn-bacuta-b834a232b/"
+                    href={socialLinks.linkedinUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-primary btn-linkedin mx-2"
@@ -41,7 +42,7 @@ export const Contact = () => {
                 </Col>
                 <Col xs="auto">
                   <a
-                    href="https://github.com/DrStrange24"
+                    href={socialLinks.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-dark btn-github mx-2"
@@ -51,7 +52,7 @@ export const Contact = () => {
                 </Col>
                 <Col xs="auto">
                   <a
-                    href="https://matching.turing.com/developer-resume-preview/714217e70e62b28a8c2b89806bd0071552764664e1f2cb"
+                    href={socialLinks.turingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-info mx-2"
@@ -61,7 +62,7 @@ export const Contact = () => {
                 </Col>
                 <Col xs="auto">
                   <a
-                    href="https://drive.google.com/file/d/1aEMUmkoBa3079VWtBW23-IK5ErN79G3p/view?usp=drive_link"
+                    href={socialLinks.resumeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-success btn-resume mx-2"
@@ -71,7 +72,7 @@ export const Contact = () => {
                 </Col>
                 <Col xs="auto">
                   <a
-                    href="https://leetcode.com/u/jeremy2429/"
+                    href={socialLinks.leetcodeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-success btn-leetcode mx-2"
