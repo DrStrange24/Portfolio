@@ -7,7 +7,7 @@ export const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <Dropdown align="end">
+    <Dropdown align="end" hidden>
       <Dropdown.Toggle
         className="theme-icon-button"
         variant="outline-light"

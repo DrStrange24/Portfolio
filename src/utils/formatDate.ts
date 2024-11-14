@@ -5,6 +5,6 @@ export const formatDate = (dateString?: string): string => {
     const [month, year] = dateSplit;
     return `${year}-${month}`;
   }
-  const [month, day, year] = dateSplit;
+  const [month, year] = [dateSplit[0], dateSplit[2]];
   return `${year}-${month}`;
 };

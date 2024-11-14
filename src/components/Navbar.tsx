@@ -18,7 +18,7 @@ export const CustomNavbar = () => {
             <Nav.Link href="#certificates">Certificates</Nav.Link>
             <Nav.Link href="#contact">Get In Touch</Nav.Link>
           </Nav>
-          {/* <ThemeToggle /> */}
+          <ThemeToggle />
         </Navbar.Collapse>
       </Container>
     </Navbar>
