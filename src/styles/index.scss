@@ -226,5 +226,41 @@ body {
         }
       }
     }
+
+    .work-experience-section {
+      background-color: #1c1e21; // Dark background color
+      padding: 2rem 0;
+
+      h2 {
+        color: #f8f9fa; // Light color for section title
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .work-experience-card {
+        background-color: #2c2f33; // Darker card background
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Soft shadow
+
+        .text-light {
+          color: #f8f9fa; // Light color for card title
+        }
+
+        .text-muted {
+          color: #adb5bd !important; // Muted color for text
+          margin-bottom: 10px !important;
+        }
+
+        ul {
+          padding-left: 1rem; // Add padding to the responsibilities list
+        }
+
+        .badge {
+          background-color: #495057; // Dark badge background
+          color: #f8f9fa; // Light color for badge text
+        }
+      }
+    }
   }
 }
