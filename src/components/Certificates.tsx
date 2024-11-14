@@ -6,6 +6,41 @@ import { CertificateProps } from "../data";
 import { formatDate } from "../utils/formatDate";
 import { faAward } from "@fortawesome/free-solid-svg-icons";
 
+export const Certificates = () => {
+  return (
+    <section
+      id="certificates"
+      className="py-5 section-bg-primary certificate-section"
+    >
+      <Container>
+        <h2 className="text-center mb-4">
+          {" "}
+          <FontAwesomeIcon icon={faAward} className="me-2" />
+          Certificates
+        </h2>
+        <Accordion defaultActiveKey="0">
+          {certificates.map((certificate: CertificateProps, index) => (
+            <Accordion.Item eventKey={index.toString()} key={certificate.id}>
+              <Accordion.Header>
+                {formatDate(certificate.issueDate)} - {certificate.title}
+              </Accordion.Header>
+              <Accordion.Body>
+                <CertificateCard
+                  title={certificate.title}
+                  issueDate={certificate.issueDate}
+                  type={certificate.type}
+                  thumbnail={certificate.thumbnail}
+                  link={certificate.link}
+                />
+              </Accordion.Body>
+            </Accordion.Item>
+          ))}
+        </Accordion>
+      </Container>
+    </section>
+  );
+};
+
 export interface CertificateCardProps {
   title: string;
   issueDate?: string;
@@ -44,40 +79,5 @@ const CertificateCard = ({
         </Button>
       </Card.Body>
     </Card>
-  );
-};
-
-export const Certificates = () => {
-  return (
-    <section
-      id="certificates"
-      className="py-5 section-bg-primary certificate-section"
-    >
-      <Container>
-        <h2 className="text-center mb-4">
-          {" "}
-          <FontAwesomeIcon icon={faAward} className="me-2" />
-          Certificates
-        </h2>
-        <Accordion defaultActiveKey="0">
-          {certificates.map((certificate: CertificateProps, index) => (
-            <Accordion.Item eventKey={index.toString()} key={certificate.id}>
-              <Accordion.Header>
-                {formatDate(certificate.issueDate)} - {certificate.title}
-              </Accordion.Header>
-              <Accordion.Body>
-                <CertificateCard
-                  title={certificate.title}
-                  issueDate={certificate.issueDate}
-                  type={certificate.type}
-                  thumbnail={certificate.thumbnail}
-                  link={certificate.link}
-                />
-              </Accordion.Body>
-            </Accordion.Item>
-          ))}
-        </Accordion>
-      </Container>
-    </section>
   );
 };
