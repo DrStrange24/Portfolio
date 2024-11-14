@@ -13,18 +13,10 @@ export const Home = () => {
     <>
       <CustomNavbar />
       <main className="home-main mt-5 pt-5">
-        <section id="home" className="py-5 section-bg-primary">
-          <Introduction />
-        </section>
-        <section id="work-history" className="py-5 section-bg-secondary">
-          <WorkHistory />
-        </section>
-        <section id="projects" className="py-5 section-bg-primary">
-          <Projects />
-        </section>
-        <section id="educations" className="py-5 section-bg-secondary">
-          <Educations />
-        </section>
+        <Introduction />
+        <WorkHistory />
+        <Projects />
+        <Educations />
         <Certificates />
         <Contact />
       </main>

@@ -22,7 +22,7 @@ const WorkExperience = (props: {
 
 export const WorkHistory = () => {
   return (
-    <>
+    <section id="work-history" className="py-5 section-bg-secondary">
       <Container>
         <Row>
           <Col>
@@ -35,6 +35,6 @@ export const WorkHistory = () => {
           </Col>
         </Row>
       </Container>
-    </>
+    </section>
   );
 };

@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export const Projects = () => {
   return (
-    <>
+    <section id="projects" className="py-5 section-bg-primary">
       <Container>
         <Row>
           <Col>
@@ -13,6 +13,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-    </>
+    </section>
   );
 };
