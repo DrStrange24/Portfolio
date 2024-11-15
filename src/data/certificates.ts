@@ -51,7 +51,7 @@ export const certificates: CertificateProps[] = [
     id: 7,
     title: "ISATU Pre-internship General Orientation",
     issueDate: "Jan 2022",
-    type: "pdf",
+    type: "image",
     link: "https://drive.google.com/file/d/1GthUQlzf6NIbO1p_ey8GxkE2UgMq5i7Y/view?usp=drive_link",
   },
   {

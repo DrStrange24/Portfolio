@@ -1,5 +1,5 @@
 import { useTheme } from "../theme/useTheme";
-import { Dropdown } from "react-bootstrap";
+import { Dropdown, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon, faDesktop } from "@fortawesome/free-solid-svg-icons";
 
@@ -7,7 +7,7 @@ export const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <Dropdown align="end" hidden>
+    <Dropdown align="end">
       <Dropdown.Toggle
         className="theme-icon-button"
         variant="outline-light"
@@ -20,18 +20,30 @@ export const ThemeToggle = () => {
           }
         />
       </Dropdown.Toggle>
-      <Dropdown.Menu>
+      <Dropdown.Menu className="theme-dropdown-menu">
         <Dropdown.Item onClick={() => toggleTheme("system")}>
-          <FontAwesomeIcon icon={faDesktop} className="me-2" />
-          System Default
+          <OverlayTrigger
+            placement="top"
+            overlay={<Tooltip id="tooltip-top">System Default</Tooltip>}
+          >
+            <FontAwesomeIcon icon={faDesktop} />
+          </OverlayTrigger>
         </Dropdown.Item>
         <Dropdown.Item onClick={() => toggleTheme("light")}>
-          <FontAwesomeIcon icon={faSun} className="me-2" />
-          Light Mode
+          <OverlayTrigger
+            placement="top"
+            overlay={<Tooltip id="tooltip-top">Light Mode</Tooltip>}
+          >
+            <FontAwesomeIcon icon={faSun} />
+          </OverlayTrigger>
         </Dropdown.Item>
         <Dropdown.Item onClick={() => toggleTheme("dark")}>
-          <FontAwesomeIcon icon={faMoon} className="me-2" />
-          Dark Mode
+          <OverlayTrigger
+            placement="top"
+            overlay={<Tooltip id="tooltip-top">Dark Mode</Tooltip>}
+          >
+            <FontAwesomeIcon icon={faMoon} />
+          </OverlayTrigger>
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
