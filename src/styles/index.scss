@@ -5,6 +5,10 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
 
+  section {
+    scroll-margin-top: 50px;
+  }
+
   .navbar {
     background-color: var(--nav-bg) !important;
 
