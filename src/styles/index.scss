@@ -260,6 +260,17 @@ body {
           background-color: #495057; // Dark badge background
           color: #f8f9fa; // Light color for badge text
         }
+
+        .card-subtitle {
+          a {
+            text-decoration: none;
+
+            &:hover {
+              color: var(--nav-text-active) !important;
+              font-size: large;
+            }
+          }
+        }
       }
     }
   }

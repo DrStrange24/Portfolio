@@ -3,8 +3,9 @@ export const workExperience = [
     id: 1,
     jobTitle: "Software Developer",
     company: "Sense Software Solutions",
+    link: "https://www.sensesoft.com.sg", // Employer website link
     dates: "February 2023 - February 2024",
-    duration: "1 yr",
+    duration: "1 year",
     projects: [
       {
         projectTitle: "Booking Concierge",
@@ -78,8 +79,9 @@ export const workExperience = [
     id: 2,
     jobTitle: "Associate Software Engineer",
     company: "PearlPay Inc.",
+    link: "https://www.pearlpay.com", // Employer website link
     dates: "July 2022 - February 2023",
-    duration: "7 mos",
+    duration: "7 months",
     projects: [
       {
         projectTitle: "Core Banking Solution",
@@ -118,8 +120,9 @@ export const workExperience = [
     id: 3,
     jobTitle: "Software Engineer Intern",
     company: "PearlPay Inc.",
+    link: "https://www.pearlpay.com", // Employer website link
     dates: "March 2022 - May 2022",
-    duration: "2 mos",
+    duration: "2 months",
     projects: [
       {
         projectTitle: "Core Banking Solution",

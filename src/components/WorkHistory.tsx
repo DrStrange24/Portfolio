@@ -35,6 +35,7 @@ interface ProjectProps {
 interface WorkExperienceCardProps {
   jobTitle: string;
   company: string;
+  link: string;
   dates: string;
   duration: string;
   projects: ProjectProps[];
@@ -43,6 +44,7 @@ interface WorkExperienceCardProps {
 const WorkExperienceCard = ({
   jobTitle,
   company,
+  link,
   dates,
   duration,
   projects,
@@ -51,10 +53,23 @@ const WorkExperienceCard = ({
     <Card className="mb-4 work-experience-card">
       <Card.Body>
         <Card.Title className="text-light">{jobTitle}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">
-          {company} | {dates} ({duration})
+        <Card.Subtitle className="mb-1 text-muted card-subtitle">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted"
+          >
+            {company}
+          </a>
         </Card.Subtitle>
-        <br />
+
+        {/* Dates and Duration on Separate Lines */}
+        <Card.Text className="text-muted" style={{ fontSize: "0.9rem" }}>
+          {dates} ({duration})
+        </Card.Text>
+
+        {/* Projects */}
         {projects.map((project, index) => (
           <div key={index} className="mb-3">
             <h5 className="text-light">{project.projectTitle}</h5>
