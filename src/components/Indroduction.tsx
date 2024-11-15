@@ -3,7 +3,7 @@ import { personalInfo } from "../data";
 
 export const Introduction = (): JSX.Element => {
   return (
-    <section id="home" className="py-5 section-bg-primary">
+    <section id="about-me" className="py-5 section-bg-primary">
       <Container className="mt-5">
         <Row className="align-items-center">
           <Col md={4} className="text-center">

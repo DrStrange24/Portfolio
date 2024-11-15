@@ -5,13 +5,13 @@ export const CustomNavbar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="#home" className="nav-name">
+        <Navbar.Brand href="#about-me" className="nav-name">
           Portfolio
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#about-me">About Me</Nav.Link>
             <Nav.Link href="#work-history">Work History</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#educations">Educations</Nav.Link>
