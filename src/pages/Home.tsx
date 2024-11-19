@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <>
       <CustomNavbar />
-      <main className="home-main mt-5 pt-5">
+      <main className="home-main">
         <Introduction />
         <WorkHistory />
         <Projects />

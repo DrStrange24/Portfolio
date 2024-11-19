@@ -1,0 +1,279 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+
+  section {
+    scroll-margin-top: 50px;
+  }
+
+  .navbar {
+    background-color: var(--nav-bg) !important;
+
+    .nav-name {
+      color: var(--nav-text);
+      margin-right: 200px;
+    }
+
+    .nav-link {
+      color: var(--nav-text);
+
+      &.active {
+        color: var(--nav-text-active);
+      }
+    }
+
+    .theme-icon-button {
+      background-color: var(--nav-bg-icon-color);
+      color: var(--nav-icon-color);
+      border-radius: 50%;
+
+      &:hover {
+        background-color: var(--nav-bg-icon-hover-color);
+        color: var(--nav-icon-hover-color);
+      }
+    }
+
+    .theme-dropdown-menu {
+      background-color: var(--section-bg-primary-color);
+      min-width: unset;
+
+      .dropdown-item {
+        color: var(--section-text-primary-color);
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: var(--section-text-primary-color);
+          color: var(--section-bg-primary-color);
+        }
+      }
+    }
+  }
+
+  .home-main {
+    .section-bg-primary {
+      background-color: var(--section-bg-primary-color);
+      color: var(--section-text-primary-color);
+    }
+
+    .section-bg-secondary {
+      background-color: var(--section-bg-secondary-color);
+      color: var(--section-text-secondary-color);
+    }
+
+    .contact-section {
+      background-color: var(--section-bg-secondary-color);
+      color: var(--section-text-secondary-color);
+      text-align: center;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--section-text-secondary-color);
+      }
+
+      p {
+        color: var(--section-text-secondary-color);
+      }
+
+      .contact-info {
+        background-color: var(--section-bg-secondary-color);
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+        color: #f8f9fa;
+
+        a {
+          color: #1a73e8;
+          font-weight: 600;
+          text-decoration: none;
+
+          &:hover {
+            color: #64b5f6;
+          }
+        }
+
+        .list-group-item {
+          background-color: transparent;
+          border: none;
+          padding: 0.75rem 0;
+          color: var(--section-text-secondary-color);
+        }
+      }
+
+      .contact-links {
+        a {
+          font-size: 1.1rem;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: var(--nav-text-active) !important;
+          }
+        }
+
+        .text-dark {
+          color: var(--section-text-secondary-color) !important;
+        }
+      }
+    }
+
+    .certificate-section {
+      .accordion-button {
+        background-color: var(--section-bg-secondary-color);
+        color: var(--section-text-primary-color);
+
+        &::after {
+          background-color: var(--section-dropdown-bg-color);
+          border-radius: 5px;
+        }
+      }
+
+      .accordion-collapse {
+        background-color: var(--section-bg-primary-color);
+
+        .card-body {
+          background-color: var(--section-bg-secondary-color);
+          color: var(--section-text-primary-color);
+        }
+      }
+    }
+
+    .education-section {
+      background-color: var(--section-bg-secondary-color);
+      padding: 2rem 0;
+
+      h2 {
+        color: var(--section-text-secondary-color) !important;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .text-light {
+        color: var(--section-text-secondary-color) !important;
+      }
+
+      .text-muted {
+        color: var(--section-text-secondary-color) !important;
+      }
+
+      h5 {
+        font-weight: 600; // Bold font weight for institution name
+      }
+
+      small {
+        font-size: 0.9rem; // Smaller font for dates
+      }
+    }
+
+    .projects-section {
+      padding: 2rem 0;
+
+      h2 {
+        color: var(--section-text-primary-color) !important;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .project-card {
+        background-color: var(--section-bg-secondary-color);
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Soft shadow for depth
+
+        .text-light {
+          color: var(--section-text-secondary-color) !important;
+        }
+
+        .text-muted {
+          color: var(--section-text-secondary-color) !important;
+        }
+
+        .badge {
+          background-color: #495057; // Darker badge background
+          color: #f8f9fa; // Light color for text
+        }
+      }
+    }
+
+    .work-experience-section {
+      padding: 2rem 0;
+
+      h2 {
+        color: var(--section-text-secondary-color) !important;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .work-experience-card {
+        background-color: var(--section-bg-primary-color);
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        .text-light {
+          color: var(--section-text-secondary-color) !important;
+        }
+
+        .text-muted {
+          color: var(--section-text-secondary-color) !important;
+          margin-bottom: 10px !important;
+        }
+
+        ul {
+          padding-left: 1rem; // Add padding to the responsibilities list
+        }
+
+        .badge {
+          background-color: #495057; // Dark badge background
+          color: #f8f9fa; // Light color for badge text
+        }
+
+        .card-subtitle {
+          a {
+            text-decoration: none;
+
+            &:hover {
+              color: var(--nav-text-active) !important;
+              font-size: large;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Apply scrollbar styles globally */
+*::-webkit-scrollbar {
+  width: 12px; /* Adjust width */
+  height: 12px; /* For horizontal scrollbar */
+}
+
+/* Track of the scrollbar */
+*::-webkit-scrollbar-track {
+  background: #2c2f33; /* Darker color for the track */
+  border-radius: 10px; /* Rounded edges */
+}
+
+/* Handle (scroll thumb) */
+*::-webkit-scrollbar-thumb {
+  background-color: #495057; /* Slightly lighter color for the thumb */
+  border-radius: 10px;
+  border: 3px solid #2c2f33; /* Add a border for padding and contrast */
+}
+
+/* Hover effect on the thumb */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #6c757d; /* Lighter color on hover */
+}
