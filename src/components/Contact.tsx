@@ -1,13 +1,5 @@
 import { useState } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  ListGroup,
-  Form,
-  Button,
-  Alert,
-} from "react-bootstrap";
+import { Container, Row, Col, ListGroup, Form, Button } from "react-bootstrap";
 import { socialLinks } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 export const Contact = () => {
   return (
@@ -118,13 +111,12 @@ export const Contact = () => {
 
 const AnonymousFeedback = () => {
   const [feedback, setFeedback] = useState("");
-  const [status, setStatus] = useState<"success" | "error" | null>(null);
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
     if (!feedback.trim()) {
-      alert("Please provide your feedback.");
+      toast.success("Please provide your feedback.");
       return;
     }
 
@@ -132,15 +124,22 @@ const AnonymousFeedback = () => {
       feedback,
     };
 
-    emailjs.send("", "", templateParams, "").then(
-      () => {
-        setStatus("success");
-        setFeedback("");
-      },
-      () => {
-        setStatus("error");
-      }
-    );
+    // emailjs
+    //   .send(
+    //     "service_udma27a",
+    //     "template_jeypctt",
+    //     templateParams,
+    //     "T6cfDKJ5iUqvJgB62"
+    //   )
+    //   .then(
+    //     () => {
+    //       setFeedback("");
+    //       toast.success("Thank you! Your feedback has been sent.");
+    //     },
+    //     () => {
+    //       toast.error("Oops! Something went wrong. Please try again.");
+    //     }
+    //   );
   };
 
   return (
@@ -162,17 +161,6 @@ const AnonymousFeedback = () => {
               Submit Feedback
             </Button>
           </Form>
-
-          {status === "success" && (
-            <Alert variant="success" className="mt-3">
-              Thank you! Your feedback has been sent.
-            </Alert>
-          )}
-          {status === "error" && (
-            <Alert variant="danger" className="mt-3">
-              Oops! Something went wrong. Please try again.
-            </Alert>
-          )}
         </Col>
       </Row>
     </div>
