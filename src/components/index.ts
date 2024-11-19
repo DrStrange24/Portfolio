@@ -5,3 +5,4 @@ export { Educations } from "./Educations";
 export { Projects } from "./Projects";
 export { WorkHistory } from "./WorkHistory";
 export { Introduction } from "./Indroduction";
+export { TooltipWrapper as Tooltip } from "./Tooltip";
