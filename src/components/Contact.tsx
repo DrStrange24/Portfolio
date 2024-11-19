@@ -11,6 +11,7 @@ import {
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { Tooltip } from ".";
 
 export const Contact = () => {
   return (
@@ -141,7 +142,10 @@ const AnonymousFeedback = () => {
 
   return (
     <div className="mt-5">
-      <h3>Anonymous Feedback</h3>
+      <Tooltip tooltip="Feel free to provide any feedback, whether positive or constructive. Your feedback is anonymous, and all comments are appreciated!">
+        <h3>Anonymous Feedback</h3>
+      </Tooltip>
+
       <Row className="justify-content-center">
         <Col>
           <Form onSubmit={handleSubmit}>
@@ -155,7 +159,7 @@ const AnonymousFeedback = () => {
               />
             </Form.Group>
             <Button type="submit" variant="primary">
-              Submit Feedback
+              Submit
             </Button>
           </Form>
         </Col>
