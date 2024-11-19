@@ -1,5 +1,5 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { personalInfo } from "../data";
+import profileImage from "../assets/images/profile.jpg";
 
 export const Introduction = (): JSX.Element => {
   return (
@@ -7,12 +7,7 @@ export const Introduction = (): JSX.Element => {
       <Container className="mt-5">
         <Row className="align-items-center">
           <Col md={4} className="text-center">
-            <Image
-              src={personalInfo.profileImageUrl}
-              alt="profile image"
-              roundedCircle
-              fluid
-            />
+            <Image src={profileImage} alt="profile image" roundedCircle fluid />
           </Col>
           <Col md={8}>
             <h1>Jeremy Brynn Bacuta</h1>
