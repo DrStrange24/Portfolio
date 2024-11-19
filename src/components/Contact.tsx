@@ -1,7 +1,13 @@
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import { socialLinks } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faFileAlt,
+  faCode,
+  faLaptopCode,
+} from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Contact = () => {
   return (
@@ -34,58 +40,63 @@ export const Contact = () => {
             {/* Professional Links */}
             <div className="contact-links mt-4">
               <h3>Connect with Me</h3>
-              <Row className="justify-content-center">
-                <Col xs="auto">
-                  <a
-                    href={socialLinks.linkedinUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline-primary btn-linkedin mx-2"
-                  >
-                    LinkedIn
-                  </a>
-                </Col>
-                <Col xs="auto">
+              <ul className="list-inline">
+                <li className="list-inline-item mx-3">
                   <a
                     href={socialLinks.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline-dark btn-github mx-2"
+                    className="text-decoration-none text-dark github-link"
                   >
+                    <FontAwesomeIcon icon={faGithub} className="me-2" />
                     GitHub
                   </a>
-                </Col>
-                <Col xs="auto">
-                  <a
-                    href={socialLinks.turingUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline-info mx-2"
-                  >
-                    Turing Profile
-                  </a>
-                </Col>
-                <Col xs="auto">
-                  <a
-                    href={socialLinks.resumeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline-success btn-resume mx-2"
-                  >
-                    Resume
-                  </a>
-                </Col>
-                <Col xs="auto">
+                </li>
+                <li className="list-inline-item mx-3">
                   <a
                     href={socialLinks.leetcodeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline-success btn-leetcode mx-2"
+                    className="text-decoration-none text-warning"
                   >
+                    <FontAwesomeIcon icon={faCode} className="me-2" />
                     LeetCode
                   </a>
-                </Col>
-              </Row>
+                </li>
+                <li className="list-inline-item mx-3">
+                  <a
+                    href={socialLinks.resumeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none text-success"
+                  >
+                    <FontAwesomeIcon icon={faFileAlt} className="me-2" />
+                    Resume
+                  </a>
+                </li>
+                <li className="list-inline-item mx-3">
+                  <a
+                    href={socialLinks.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none text-primary"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} className="me-2" />
+                    LinkedIn
+                  </a>
+                </li>
+                <li className="list-inline-item mx-3">
+                  <a
+                    href={socialLinks.turingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none text-dark"
+                  >
+                    <FontAwesomeIcon icon={faLaptopCode} className="me-2" />
+                    Turing Profile
+                  </a>
+                </li>
+              </ul>
             </div>
           </Col>
         </Row>
