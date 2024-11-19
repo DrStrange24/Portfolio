@@ -1,8 +1,7 @@
-import { useTheme } from "../theme/useTheme";
 import { Dropdown } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon, faDesktop } from "@fortawesome/free-solid-svg-icons";
-import { Tooltip } from ".";
+import { Tooltip, useTheme } from ".";
 
 export const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();

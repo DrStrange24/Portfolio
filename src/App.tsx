@@ -1,6 +1,5 @@
-import { ThemeProvider } from "./theme/ThemeContext";
 import { Home } from "./pages";
-import { Toast } from "./components";
+import { Toast, ThemeProvider } from "./components";
 import "./App.css";
 import "./styles/variables.scss";
 import "./styles/index.scss";

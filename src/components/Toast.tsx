@@ -1,5 +1,5 @@
 import { ToastContainer } from "react-toastify";
-import { useTheme } from "../theme/useTheme";
+import { useTheme } from ".";
 
 export const Toast = () => {
   const { resolvedTheme } = useTheme();

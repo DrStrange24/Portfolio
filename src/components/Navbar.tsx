@@ -1,5 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { ThemeToggle } from "./ThemeToggle";
+import { ThemeToggle } from ".";
 
 export const CustomNavbar = () => {
   return (
