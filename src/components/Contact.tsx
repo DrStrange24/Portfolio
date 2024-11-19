@@ -1,4 +1,13 @@
-import { Container, Row, Col, ListGroup } from "react-bootstrap";
+import { useState } from "react";
+import {
+  Container,
+  Row,
+  Col,
+  ListGroup,
+  Form,
+  Button,
+  Alert,
+} from "react-bootstrap";
 import { socialLinks } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,13 +17,14 @@ import {
   faLaptopCode,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   return (
     <section id="contact" className="contact-section py-5">
       <Container>
         <Row>
-          <Col md={8} lg={6} className="mx-auto text-center">
+          <Col md={8} lg={8} className="mx-auto text-center">
             <h2>
               <FontAwesomeIcon icon={faEnvelope} className="me-2" />
               Contact
@@ -98,9 +108,73 @@ export const Contact = () => {
                 </li>
               </ul>
             </div>
+            <AnonymousFeedback />
           </Col>
         </Row>
       </Container>
     </section>
+  );
+};
+
+const AnonymousFeedback = () => {
+  const [feedback, setFeedback] = useState("");
+  const [status, setStatus] = useState<"success" | "error" | null>(null);
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+
+    if (!feedback.trim()) {
+      alert("Please provide your feedback.");
+      return;
+    }
+
+    const templateParams = {
+      feedback,
+    };
+
+    emailjs.send("", "", templateParams, "").then(
+      () => {
+        setStatus("success");
+        setFeedback("");
+      },
+      () => {
+        setStatus("error");
+      }
+    );
+  };
+
+  return (
+    <div className="mt-5">
+      <h3>Anonymous Feedback</h3>
+      <Row className="justify-content-center">
+        <Col>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="mb-3" controlId="feedback">
+              <Form.Control
+                as="textarea"
+                rows={5}
+                placeholder="Write your feedback here..."
+                value={feedback}
+                onChange={(event) => setFeedback(event.target.value)}
+              />
+            </Form.Group>
+            <Button type="submit" variant="primary">
+              Submit Feedback
+            </Button>
+          </Form>
+
+          {status === "success" && (
+            <Alert variant="success" className="mt-3">
+              Thank you! Your feedback has been sent.
+            </Alert>
+          )}
+          {status === "error" && (
+            <Alert variant="danger" className="mt-3">
+              Oops! Something went wrong. Please try again.
+            </Alert>
+          )}
+        </Col>
+      </Row>
+    </div>
   );
 };
