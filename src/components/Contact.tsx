@@ -110,13 +110,17 @@ export const Contact = () => {
 };
 
 const AnonymousFeedback = () => {
+  const serviceId = process.env.EMAILJS_SERVICE_ID || "";
+  const templateId = process.env.EMAILJS_TEMPLATE_ID || "";
+  const userId = process.env.EMAILJS_USER_ID || "";
+
   const [feedback, setFeedback] = useState("");
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
     if (!feedback.trim()) {
-      toast.success("Please provide your feedback.");
+      toast.info("Please provide your feedback.");
       return;
     }
 
@@ -124,22 +128,15 @@ const AnonymousFeedback = () => {
       feedback,
     };
 
-    // emailjs
-    //   .send(
-    //     "service_udma27a",
-    //     "template_jeypctt",
-    //     templateParams,
-    //     "T6cfDKJ5iUqvJgB62"
-    //   )
-    //   .then(
-    //     () => {
-    //       setFeedback("");
-    //       toast.success("Thank you! Your feedback has been sent.");
-    //     },
-    //     () => {
-    //       toast.error("Oops! Something went wrong. Please try again.");
-    //     }
-    //   );
+    emailjs.send(serviceId, templateId, templateParams, userId).then(
+      () => {
+        setFeedback("");
+        toast.success("Thank you! Your feedback has been sent.");
+      },
+      () => {
+        toast.error("Oops! Something went wrong. Please try again.");
+      }
+    );
   };
 
   return (
