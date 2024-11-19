@@ -134,7 +134,7 @@ const AnonymousFeedback = () => {
         toast.success("Thank you! Your feedback has been sent.");
       },
       () => {
-        toast.error("Oops! Something went wrong. Please try again.");
+        toast.error("Oops! Something went wrong. Please try again later.");
       }
     );
   };
