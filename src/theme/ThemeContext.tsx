@@ -1,9 +1,11 @@
-import React, { createContext, useState, useEffect, ReactNode } from "react";
+import { createContext, useState, useEffect, ReactNode } from "react";
 
-type Theme = "light" | "dark" | "system";
+type ResolvedTheme = "light" | "dark";
+type Theme = ResolvedTheme | "system";
 type ThemeContextType = {
   theme: Theme;
   toggleTheme: (newTheme: Theme) => void;
+  resolvedTheme: ResolvedTheme;
 };
 
 export const ThemeContext = createContext<ThemeContextType | undefined>(
@@ -20,6 +22,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
+  const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>("light");
 
   const applyTheme = (theme: Theme) => {
     if (theme === "system") {
@@ -27,12 +30,15 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
       const systemPrefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
-      document.documentElement.setAttribute(
-        "data-theme",
-        systemPrefersDark ? "dark" : "light"
-      );
+
+      const currentTheme = systemPrefersDark ? "dark" : "light";
+
+      setResolvedTheme(currentTheme);
+
+      document.documentElement.setAttribute("data-theme", currentTheme);
     } else {
       document.documentElement.setAttribute("data-theme", theme);
+      setResolvedTheme(theme);
     }
     localStorage.setItem("theme", theme); // Save user choice
   };
@@ -61,7 +67,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, resolvedTheme }}>
       {children}
     </ThemeContext.Provider>
   );
