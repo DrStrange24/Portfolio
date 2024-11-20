@@ -49,6 +49,7 @@ export const workExperience = [
           "Git",
           "SCSS",
           "HTML",
+          "Regex",
         ],
       },
       {
@@ -65,12 +66,12 @@ export const workExperience = [
         technologies: [
           "C#",
           "SQL Server",
-          "Regex",
-          "SCSS",
-          "Logistics",
           "Azure DevOps",
           "React",
           "Typescript",
+          "HTML",
+          "SCSS",
+          "Regex",
         ],
       },
     ],
