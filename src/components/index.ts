@@ -9,3 +9,4 @@ export { TooltipWrapper as Tooltip } from "./Tooltip";
 export { Toast } from "./Toast";
 export { ThemeProvider, useTheme } from "./ThemeProvider";
 export { ThemeToggle } from "./ThemeToggle";
+export { SpinnerProvider, useSpinner } from "./SpinnerProvider";

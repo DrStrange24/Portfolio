@@ -1,11 +1,13 @@
 import { Home } from "./pages";
-import { Toast, ThemeProvider } from "./components";
+import { Toast, ThemeProvider, SpinnerProvider } from "./components";
 
 export const App = () => {
   return (
     <ThemeProvider>
-      <Home />
-      <Toast />
+      <SpinnerProvider>
+        <Home />
+        <Toast />
+      </SpinnerProvider>
     </ThemeProvider>
   );
 };
