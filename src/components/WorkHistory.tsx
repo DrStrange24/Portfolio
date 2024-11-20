@@ -58,7 +58,7 @@ const WorkExperienceCard = ({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted"
+            className="text-light"
           >
             {company}
           </a>

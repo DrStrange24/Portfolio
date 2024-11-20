@@ -74,7 +74,11 @@ body {
       h2 {
         font-size: 2rem;
         font-weight: bold;
-        color: var(--section-text-secondary-color);
+        color: var(--section-text-primary-color);
+      }
+
+      h3 {
+        color: var(--section-text-primary-color);
       }
 
       p {
@@ -148,14 +152,14 @@ body {
       padding: 2rem 0;
 
       h2 {
-        color: var(--section-text-secondary-color) !important;
+        color: var(--section-text-primary-color) !important;
         font-weight: bold;
         display: flex;
         align-items: center;
       }
 
       .text-light {
-        color: var(--section-text-secondary-color) !important;
+        color: var(--section-text-primary-color) !important;
       }
 
       .text-muted {
@@ -187,7 +191,7 @@ body {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Soft shadow for depth
 
         .text-light {
-          color: var(--section-text-secondary-color) !important;
+          color: var(--section-text-primary-color) !important;
         }
 
         .text-muted {
@@ -205,7 +209,7 @@ body {
       padding: 2rem 0;
 
       h2 {
-        color: var(--section-text-secondary-color) !important;
+        color: var(--section-text-primary-color) !important;
         font-weight: bold;
         display: flex;
         align-items: center;
@@ -217,7 +221,7 @@ body {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
         .text-light {
-          color: var(--section-text-secondary-color) !important;
+          color: var(--section-text-primary-color) !important;
         }
 
         .text-muted {

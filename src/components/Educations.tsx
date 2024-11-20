@@ -19,8 +19,8 @@ export const Educations = () => {
               <small>{item.dates}</small>
             </Col>
             <Col md={9}>
-              <h5 className="text-light">{item.institution}</h5>
-              <p className="text-muted">{item.field}</p>
+              <h5 className="text-muted">{item.institution}</h5>
+              <p className="text-light">{item.field}</p>
             </Col>
           </Row>
         ))}
