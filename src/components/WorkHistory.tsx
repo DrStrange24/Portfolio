@@ -71,7 +71,7 @@ const WorkExperienceCard = ({
 
         {/* Projects */}
         {projects.map((project, index) => (
-          <div key={index} className="mb-3">
+          <div key={index} className="projects mb-3">
             <h5 className="text-light">{project.projectTitle}</h5>
             <ul className="text-muted">
               {project.responsibilities.map((responsibility, idx) => (
@@ -85,7 +85,6 @@ const WorkExperienceCard = ({
                 </Badge>
               ))}
             </div>
-            <br />
           </div>
         ))}
       </Card.Body>

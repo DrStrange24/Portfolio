@@ -243,6 +243,12 @@ body {
             }
           }
         }
+
+        .projects {
+          padding: 15px;
+          border-radius: 12px;
+          box-shadow: var(--work-experience-projects-box-shadow);
+        }
       }
     }
   }
