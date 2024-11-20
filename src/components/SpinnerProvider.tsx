@@ -1,7 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 import { Spinner } from "react-bootstrap";
 import { Variant } from "react-bootstrap/esm/types";
-import { useTheme } from ".";
 
 interface SpinnerConfig {
   show: boolean;
