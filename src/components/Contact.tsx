@@ -11,7 +11,7 @@ import {
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import { Tooltip } from ".";
+import { Tooltip, useSpinner } from ".";
 
 export const Contact = () => {
   return (
@@ -115,13 +115,17 @@ const AnonymousFeedback = () => {
   const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "";
   const userId = process.env.REACT_APP_EMAILJS_USER_ID || "";
 
+  const { showSpinner, hideSpinner } = useSpinner();
+
   const [feedback, setFeedback] = useState("");
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
+    showSpinner();
 
     if (!feedback.trim()) {
       toast.info("Please provide your feedback.");
+      hideSpinner();
       return;
     }
 
@@ -133,9 +137,11 @@ const AnonymousFeedback = () => {
       () => {
         setFeedback("");
         toast.success("Thank you! Your feedback has been sent.");
+        hideSpinner();
       },
       () => {
         toast.error("Oops! Something went wrong. Please try again later.");
+        hideSpinner();
       }
     );
   };

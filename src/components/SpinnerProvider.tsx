@@ -19,8 +19,6 @@ interface SpinnerContextType {
 const SpinnerContext = createContext<SpinnerContextType | undefined>(undefined);
 
 export const SpinnerProvider = ({ children }: { children: ReactNode }) => {
-  const { resolvedTheme } = useTheme();
-  const defaultVariant = resolvedTheme === "dark" ? "light" : "dark";
   const [config, setConfig] = useState<SpinnerConfig>({ show: false });
 
   const showSpinner = (newConfig?: Omit<SpinnerConfig, "show">) => {
@@ -38,12 +36,14 @@ export const SpinnerProvider = ({ children }: { children: ReactNode }) => {
         <div className="spinner-overlay">
           <div className="d-flex flex-column align-items-center">
             <Spinner
-              animation="border"
-              variant={config.variant || defaultVariant}
-              size={config.size || undefined}
               className="spinner"
+              animation="border"
+              variant={config.variant || "light"}
+              size={config.size || undefined}
             />
-            {config.message && <p className="mt-2">{config.message}</p>}
+            <p className="spinner-message mt-2">
+              {config.message || "Loading..."}
+            </p>
           </div>
         </div>
       )}

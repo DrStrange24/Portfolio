@@ -264,6 +264,10 @@ body {
       width: #{$size};
       height: #{$size};
     }
+
+    .spinner-message {
+      color: #ffffff;
+    }
   }
 }
 
