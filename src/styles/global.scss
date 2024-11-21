@@ -92,21 +92,21 @@ body {
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         color: #f8f9fa;
 
-        a {
-          color: #1a73e8;
-          font-weight: 600;
-          text-decoration: none;
-
-          &:hover {
-            color: #64b5f6;
-          }
-        }
-
         .list-group-item {
           background-color: transparent;
           border: none;
           padding: 0.75rem 0;
           color: var(--section-text-secondary-color);
+
+          a {
+            color: #1a73e8;
+            font-weight: 600;
+            text-decoration: none;
+
+            &:hover {
+              color: #64b5f6;
+            }
+          }
         }
       }
 
@@ -240,8 +240,6 @@ body {
 
         .card-subtitle {
           a {
-            text-decoration: none;
-
             &:hover {
               color: var(--nav-text-active) !important;
             }
