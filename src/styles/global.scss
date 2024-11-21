@@ -199,8 +199,8 @@ body {
         }
 
         .badge {
-          background-color: #495057; // Darker badge background
-          color: #f8f9fa; // Light color for text
+          background-color: #495057 !important;
+          color: #f8f9fa;
         }
       }
     }
@@ -234,8 +234,8 @@ body {
         }
 
         .badge {
-          background-color: #495057; // Dark badge background
-          color: #f8f9fa; // Light color for badge text
+          background-color: #495057 !important;
+          color: #f8f9fa;
         }
 
         .card-subtitle {
