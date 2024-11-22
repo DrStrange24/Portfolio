@@ -41,7 +41,7 @@ export const projects = [
       "Tracked and managed both contributions and payouts.",
       "Automatically updated data at specified intervals or scheduled times.",
     ],
-    technologies: ["C#", "MS SQL Server"],
+    technologies: ["C#", "SQL Server"],
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ export const projects = [
       "Implemented automatic data backup scheduling and an auto-archive feature for specific dates.",
       "Added a custom class for nested checkboxes to align with the data structures used in contact tracing.",
     ],
-    technologies: ["C#", "MySQL", "3rd Party APIs & Libraries"],
+    technologies: ["C#", "MySQL"],
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ export const projects = [
       "Implemented automated trading features to execute buy and sell orders based on predefined strategies.",
       "Utilized interfaces to achieve polymorphism, allowing class methods with the same name to have different processing logic based on the implementing class.",
     ],
-    technologies: ["C#", "MS SQL Server", "Binance API"],
+    technologies: ["C#", "SQL Server"],
   },
   {
     id: 7,
@@ -76,7 +76,7 @@ export const projects = [
       "Trained a neural network for intent classification to improve response accuracy.",
       "Added a feature to save user conversations and feedback for future reference and improvements.",
     ],
-    technologies: ["Python", "Django", "Flask", "JavaScript", "HTML/CSS"],
+    technologies: ["Python", "Django", "Flask", "JavaScript", "HTML", "CSS"],
   },
   {
     id: 8,
@@ -87,6 +87,6 @@ export const projects = [
       "Implemented data import functionality from Google Sheets.",
       "Utilized C#, MS SQL Server, Git, and GitHub for development.",
     ],
-    technologies: ["C#", "MS SQL Server", "GitHub", "Git"],
+    technologies: ["C#", "SQL Server", "GitHub", "Git"],
   },
 ];
