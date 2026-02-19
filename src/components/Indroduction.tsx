@@ -13,15 +13,14 @@ export const Introduction = (): JSX.Element => {
             <h1>Jeremy Brynn Bacuta</h1>
             <h3>Software Engineer</h3>
             <p>
-              Dynamic Software Engineer with 2 years of experience in full-stack
-              development, skilled in backend and frontend technologies like C#,
-              Java, Python, React, and more. Extensive project experience
-              spanning 4 years in developing desktop and web applications.
-              Experienced in API integration, system optimization, and
-              Object-oriented Programming. Adept at enhancing code quality and
-              collaborating with international teams. Committed to continuous
-              learning, seeking to contribute to innovative projects at a
-              forward-thinking organization.
+              Software engineer with 2 years of full-stack experience across
+              C#, Java, Python, and React. Delivered web and desktop
+              applications over 4 years of project work, with strengths in API
+              integration, performance tuning, and clean UI. Known for
+              elevating code quality, collaborating with international teams,
+              and turning requirements into reliable, user-friendly features.
+              Eager to contribute to product teams that value craft, velocity,
+              and continuous learning.
             </p>
           </Col>
         </Row>

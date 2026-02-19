@@ -21,9 +21,12 @@ export const Contact = () => {
           <Col md={8} lg={8} className="mx-auto text-center">
             <h2>
               <FontAwesomeIcon icon={faEnvelope} className="me-2" />
-              Contact
+              Let's Connect
             </h2>
-            <p>I’d love to hear from you! Here’s how you can reach me:</p>
+            <p>
+              Open to opportunities and collaborations. Reach out directly or
+              connect on the platforms below.
+            </p>
 
             {/* Contact Info */}
             <ListGroup variant="flush" className="contact-info text-start mt-4">
@@ -43,7 +46,7 @@ export const Contact = () => {
 
             {/* Professional Links */}
             <div className="contact-links mt-4">
-              <h3>Connect with Me</h3>
+              <h3>Find Me Online</h3>
               <ul className="list-inline">
                 <li className="list-inline-item mx-3">
                   <a
@@ -148,7 +151,7 @@ const AnonymousFeedback = () => {
 
   return (
     <div className="mt-5">
-      <Tooltip tooltip="Feel free to provide any feedback, whether positive or constructive. Your feedback is anonymous, and all comments are appreciated!">
+      <Tooltip tooltip="All feedback is anonymous. Share anything that would make this portfolio stronger.">
         <h3>Anonymous Feedback</h3>
       </Tooltip>
 
@@ -159,7 +162,7 @@ const AnonymousFeedback = () => {
               <Form.Control
                 as="textarea"
                 rows={5}
-                placeholder="Write your feedback here..."
+                placeholder="Share quick feedback or suggestions..."
                 value={feedback}
                 onChange={(event) => setFeedback(event.target.value)}
               />

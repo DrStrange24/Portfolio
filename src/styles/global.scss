@@ -2,9 +2,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-sans);
   background-color: var(--background-color);
   color: var(--text-color);
+  background-image: radial-gradient(1200px circle at 20% 10%,
+      var(--page-glow),
+      transparent 60%),
+    linear-gradient(180deg, var(--background-color), var(--background-color-end));
   transition: background-color 0.3s, color 0.3s;
 
   section {
@@ -13,6 +17,12 @@ body {
 
   .navbar {
     background-color: var(--nav-bg) !important;
+    border-bottom: 1px solid var(--nav-border-color);
+
+    .navbar-brand {
+      font-family: var(--font-display);
+      letter-spacing: 0.02em;
+    }
 
     .nav-name {
       color: var(--nav-text);
@@ -21,6 +31,7 @@ body {
 
     .nav-link {
       color: var(--nav-text);
+      font-weight: 600;
 
       &.active {
         color: var(--nav-text-active);
@@ -41,6 +52,8 @@ body {
     .theme-dropdown-menu {
       background-color: var(--section-bg-primary-color);
       min-width: unset;
+      border: 1px solid var(--card-border-color);
+      box-shadow: var(--card-shadow);
 
       .dropdown-item {
         color: var(--section-text-primary-color);
@@ -56,6 +69,16 @@ body {
   }
 
   .home-main {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: var(--font-display);
+      letter-spacing: -0.01em;
+    }
+
     .section-bg-primary {
       background-color: var(--section-bg-primary-color);
       color: var(--section-text-primary-color);
@@ -86,11 +109,12 @@ body {
       }
 
       .contact-info {
-        background-color: var(--section-bg-secondary-color);
+        background-color: var(--card-bg-color);
         border-radius: 8px;
         padding: 1rem;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-        color: #f8f9fa;
+        box-shadow: var(--card-shadow);
+        border: 1px solid var(--card-border-color);
+        color: var(--section-text-primary-color);
 
         .list-group-item {
           background-color: transparent;
@@ -99,12 +123,12 @@ body {
           color: var(--section-text-secondary-color);
 
           a {
-            color: #1a73e8;
+            color: var(--accent-primary);
             font-weight: 600;
             text-decoration: none;
 
             &:hover {
-              color: #64b5f6;
+              color: var(--accent-secondary);
             }
           }
         }
@@ -114,6 +138,7 @@ body {
         a {
           font-size: 1.1rem;
           transition: color 0.2s ease;
+          color: var(--accent-secondary) !important;
 
           &:hover {
             color: var(--nav-text-active) !important;
@@ -128,8 +153,9 @@ body {
 
     .certificate-section {
       .accordion-button {
-        background-color: var(--section-bg-secondary-color);
+        background-color: var(--card-bg-color);
         color: var(--section-text-primary-color);
+        border: 1px solid var(--card-border-color);
 
         &::after {
           background-color: var(--section-dropdown-bg-color);
@@ -141,7 +167,7 @@ body {
         background-color: var(--section-bg-primary-color);
 
         .card-body {
-          background-color: var(--section-bg-secondary-color);
+          background-color: var(--card-bg-color);
           color: var(--section-text-primary-color);
         }
       }
@@ -186,9 +212,9 @@ body {
       }
 
       .project-card {
-        background-color: var(--section-bg-secondary-color);
-        border: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Soft shadow for depth
+        background-color: var(--card-bg-color);
+        border: 1px solid var(--card-border-color);
+        box-shadow: var(--card-shadow);
 
         .text-light {
           color: var(--section-text-primary-color) !important;
@@ -199,8 +225,8 @@ body {
         }
 
         .badge {
-          background-color: #495057 !important;
-          color: #f8f9fa;
+          background-color: var(--accent-tertiary) !important;
+          color: var(--on-accent-tertiary);
         }
       }
     }
@@ -216,9 +242,9 @@ body {
       }
 
       .work-experience-card {
-        background-color: var(--section-bg-primary-color);
-        border: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: var(--card-bg-color);
+        border: 1px solid var(--card-border-color);
+        box-shadow: var(--card-shadow);
 
         .text-light {
           color: var(--section-text-primary-color) !important;
@@ -234,8 +260,8 @@ body {
         }
 
         .badge {
-          background-color: #495057 !important;
-          color: #f8f9fa;
+          background-color: var(--accent-tertiary) !important;
+          color: var(--on-accent-tertiary);
         }
 
         .card-subtitle {
@@ -250,7 +276,34 @@ body {
           padding: 15px;
           border-radius: 12px;
           box-shadow: var(--work-experience-projects-box-shadow);
+          border: 1px solid var(--card-border-color);
         }
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      section {
+        animation: section-reveal 0.6s ease both;
+      }
+
+      section:nth-of-type(2) {
+        animation-delay: 0.08s;
+      }
+
+      section:nth-of-type(3) {
+        animation-delay: 0.16s;
+      }
+
+      section:nth-of-type(4) {
+        animation-delay: 0.24s;
+      }
+
+      section:nth-of-type(5) {
+        animation-delay: 0.32s;
+      }
+
+      section:nth-of-type(6) {
+        animation-delay: 0.4s;
       }
     }
   }
@@ -276,6 +329,31 @@ body {
       color: #ffffff;
     }
   }
+
+  .btn-primary {
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: var(--on-accent-primary);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-secondary);
+      border-color: var(--accent-secondary);
+      color: var(--on-accent-primary);
+    }
+  }
+}
+
+@keyframes section-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 code {
@@ -285,24 +363,27 @@ code {
 
 /* Apply scrollbar styles globally */
 *::-webkit-scrollbar {
-  width: 12px; /* Adjust width */
-  height: 12px; /* For horizontal scrollbar */
+  width: 12px;
+  /* Adjust width */
+  height: 12px;
+  /* For horizontal scrollbar */
 }
 
 /* Track of the scrollbar */
 *::-webkit-scrollbar-track {
-  background: #2c2f33; /* Darker color for the track */
-  border-radius: 10px; /* Rounded edges */
+  background: var(--scrollbar-track);
+  border-radius: 10px;
+  /* Rounded edges */
 }
 
 /* Handle (scroll thumb) */
 *::-webkit-scrollbar-thumb {
-  background-color: #495057; /* Slightly lighter color for the thumb */
+  background-color: var(--scrollbar-thumb);
   border-radius: 10px;
-  border: 3px solid #2c2f33; /* Add a border for padding and contrast */
+  border: 3px solid var(--scrollbar-track);
 }
 
 /* Hover effect on the thumb */
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #6c757d; /* Lighter color on hover */
+  background-color: var(--scrollbar-thumb-hover);
 }

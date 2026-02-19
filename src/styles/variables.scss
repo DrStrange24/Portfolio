@@ -1,47 +1,80 @@
 :root {
-  $bg: #f8f9fa;
-  $text: #343a40;
+  --font-sans: "Source Sans 3", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
 
-  --nav-bg: #{$bg}; // Light gray background
-  --nav-text: #{$text}; // Dark gray text
-  --nav-text-active: #007bff; // Blue accent for active nav link
-  --nav-bg-icon-color: #{$bg};
-  --nav-bg-icon-hover-color: #{$text};
-  --nav-icon-color: #{$text};
-  --nav-icon-hover-color: #{$bg};
+  --background-color: #f5f0ea;
+  --background-color-end: #efe6dc;
+  --page-glow: #fff3e3;
+  --text-color: #2b2620;
 
-  // Light Theme Colors
-  --section-bg-primary-color: #f8f9fa; // Light gray
-  --section-bg-secondary-color: #ffffff; // White
-  --section-text-primary-color: #343a40; // Dark gray for primary text
-  --section-text-secondary-color: #495057; // Slightly lighter gray for secondary text
+  --accent-primary: #c65a2e;
+  --accent-secondary: #2f6b5f;
+  --accent-tertiary: #b0833a;
+  --on-accent-primary: #fdf7f1;
+  --on-accent-tertiary: #2b2620;
 
-  --section-dropdown-bg-color: #f1f1f1;
+  --nav-bg: #f6f1eb;
+  --nav-text: #2b2620;
+  --nav-text-active: var(--accent-primary);
+  --nav-border-color: rgba(43, 38, 32, 0.08);
+  --nav-bg-icon-color: #efe6dc;
+  --nav-bg-icon-hover-color: #2b2620;
+  --nav-icon-color: #2b2620;
+  --nav-icon-hover-color: #fdf7f1;
 
-  --work-experience-projects-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4),
-    0px 4px 8px rgba(0, 0, 0, 0.3);
+  --section-bg-primary-color: #f6f1eb;
+  --section-bg-secondary-color: #fffaf5;
+  --section-text-primary-color: #2b2620;
+  --section-text-secondary-color: #5f554a;
+
+  --section-dropdown-bg-color: #efe6dc;
+
+  --card-bg-color: #fffaf5;
+  --card-border-color: rgba(43, 38, 32, 0.08);
+  --card-shadow: 0px 12px 30px rgba(43, 38, 32, 0.12);
+
+  --work-experience-projects-box-shadow: 0px 10px 24px rgba(43, 38, 32, 0.12);
+
+  --scrollbar-track: #e2d6c7;
+  --scrollbar-thumb: #b59a7b;
+  --scrollbar-thumb-hover: #9c7f5b;
 }
 
 [data-theme="dark"] {
-  $bg: #343a40;
-  $text: #f8f9fa;
+  --background-color: #1f1b17;
+  --background-color-end: #151310;
+  --page-glow: #2a241d;
+  --text-color: #f4efe8;
 
-  --nav-bg: #{$bg}; // Dark gray background
-  --nav-text: #{$text}; // Light gray text
-  --nav-text-active: #17a2b8; // Teal accent for active nav link
-  --nav-bg-icon-color: #{$bg};
-  --nav-bg-icon-hover-color: #{$text};
-  --nav-icon-color: #{$text};
-  --nav-icon-hover-color: #{$bg};
+  --accent-primary: #d97a4e;
+  --accent-secondary: #4e8b7f;
+  --accent-tertiary: #c79a53;
+  --on-accent-primary: #1b1410;
+  --on-accent-tertiary: #1b1410;
 
-  // Dark Theme Colors
-  --section-bg-primary-color: #2c2f33; // Dark gray
-  --section-bg-secondary-color: #23272a; // Slightly lighter dark gray
-  --section-text-primary-color: #f8f9fa; // Light gray for primary text
-  --section-text-secondary-color: #adb5bd; // Slightly darker gray for secondary text
+  --nav-bg: #1f1b17;
+  --nav-text: #f4efe8;
+  --nav-text-active: var(--accent-primary);
+  --nav-border-color: rgba(244, 239, 232, 0.08);
+  --nav-bg-icon-color: #2a251f;
+  --nav-bg-icon-hover-color: #f4efe8;
+  --nav-icon-color: #f4efe8;
+  --nav-icon-hover-color: #2a251f;
 
-  --section-dropdown-bg-color: gray;
+  --section-bg-primary-color: #23201b;
+  --section-bg-secondary-color: #1b1915;
+  --section-text-primary-color: #f4efe8;
+  --section-text-secondary-color: #c9c1b6;
 
-  --work-experience-projects-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7),
-    0px 6px 16px rgba(0, 0, 0, 0.5);
+  --section-dropdown-bg-color: #2b2721;
+
+  --card-bg-color: #25211c;
+  --card-border-color: rgba(244, 239, 232, 0.08);
+  --card-shadow: 0px 14px 34px rgba(0, 0, 0, 0.45);
+
+  --work-experience-projects-box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.5);
+
+  --scrollbar-track: #2a251f;
+  --scrollbar-thumb: #4f463d;
+  --scrollbar-thumb-hover: #6a5e51;
 }
