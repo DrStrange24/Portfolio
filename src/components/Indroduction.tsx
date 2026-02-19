@@ -10,7 +10,7 @@ export const Introduction = (): JSX.Element => {
             <span className="hero-kicker">Software Engineer</span>
             <h1>
               Jeremy Brynn
-              <span className="hero-accent"> Bacuta</span>
+              <span className="text-gradient-accent"> Bacuta</span>
             </h1>
             <p className="hero-lead">
               I build fast, reliable web apps and internal tools. My focus is
