@@ -95,17 +95,6 @@ export const Contact = () => {
                     LinkedIn
                   </a>
                 </li>
-                <li className="list-inline-item">
-                  <a
-                    href={socialLinks.turingUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-decoration-none"
-                  >
-                    <FontAwesomeIcon icon={faLaptopCode} className="me-2" />
-                    Turing Profile
-                  </a>
-                </li>
               </ul>
             </div>
           </Col>
