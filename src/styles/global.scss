@@ -63,6 +63,14 @@
   --edu-gradient: linear-gradient(90deg, var(--gradient-text-start) 0%, var(--gradient-text-end) 100%);
 }
 
+[data-theme="dark"] .home-main .certificate-section .accordion-button::after {
+  filter: brightness(1.8) invert(1);
+}
+
+[data-theme="light"] .home-main .certificate-section .accordion-button::after {
+  filter: none;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -80,7 +88,7 @@ body {
   overflow-x: hidden;
 
   section {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 120px;
   }
 
   .navbar {
@@ -325,7 +333,7 @@ body {
 
       .contact-grid {
         margin-top: 2.5rem;
-        gap: 2rem 0;
+        gap: 2rem 1.25rem;
       }
 
       .contact-panel {
@@ -417,8 +425,13 @@ body {
       }
 
       .accordion-button::after {
-        background-color: var(--section-dropdown-bg-color);
-        border-radius: 5px;
+        background-color: transparent;
+        border-radius: 8px;
+        width: 1.75rem;
+        height: 1.75rem;
+        background-position: center;
+        background-size: 1rem;
+        border: 1px solid color-mix(in srgb, var(--section-text-primary-color) 30%, transparent);
       }
 
       .accordion-collapse {

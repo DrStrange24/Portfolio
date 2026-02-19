@@ -2,6 +2,9 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import profileImage from "../assets/images/profile.jpg";
 
 export const Introduction = (): JSX.Element => {
+  const startYear = 2018;
+  const yearsOfExperience = Math.max(0, new Date().getFullYear() - startYear);
+
   return (
     <section
       id="about-me"
@@ -30,7 +33,7 @@ export const Introduction = (): JSX.Element => {
               </Button>
             </div>
             <div className="hero-meta">
-              <span>4+ years projects</span>
+              <span>{yearsOfExperience}+ years developing projects</span>
               <span>Full-stack</span>
               <span>React - C# - Java</span>
             </div>
