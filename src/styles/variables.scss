@@ -90,3 +90,48 @@
   --fx-orb-c: rgba(164, 255, 29, 0.22);
   --fx-scan: rgba(255, 255, 255, 0.02);
 }
+
+[data-theme="light"] {
+  --background-color: #f5f7fb;
+  --background-color-end: #e9eff6;
+  --page-glow: rgba(32, 111, 94, 0.14);
+  --text-color: #0f172a;
+
+  --accent-primary: #0f9b7b;
+  --accent-secondary: #157aa6;
+  --accent-tertiary: #6ea311;
+  --on-accent-primary: #f8fafc;
+  --on-accent-tertiary: #0b1f12;
+
+  --nav-bg: rgba(246, 249, 252, 0.9);
+  --nav-text: #1f2937;
+  --nav-text-active: #0f9b7b;
+  --nav-border-color: rgba(15, 23, 42, 0.12);
+  --nav-bg-icon-color: rgba(238, 242, 247, 0.95);
+  --nav-bg-icon-hover-color: #0f172a;
+  --nav-icon-color: #0f172a;
+  --nav-icon-hover-color: #f8fafc;
+
+  --section-bg-primary-color: rgba(255, 255, 255, 0.92);
+  --section-bg-secondary-color: rgba(245, 248, 252, 0.96);
+  --section-text-primary-color: #111827;
+  --section-text-secondary-color: #4b5563;
+
+  --section-dropdown-bg-color: rgba(255, 255, 255, 0.98);
+
+  --card-bg-color: rgba(255, 255, 255, 0.92);
+  --card-border-color: rgba(15, 155, 123, 0.18);
+  --card-shadow: 0 16px 40px rgba(15, 23, 42, 0.16);
+
+  --work-experience-projects-box-shadow: 0 16px 36px rgba(15, 23, 42, 0.18);
+
+  --scrollbar-track: #e6ecf4;
+  --scrollbar-thumb: #c3cdd9;
+  --scrollbar-thumb-hover: #a7b3c2;
+
+  --fx-grid: rgba(15, 23, 42, 0.05);
+  --fx-orb-a: rgba(15, 155, 123, 0.16);
+  --fx-orb-b: rgba(21, 122, 166, 0.14);
+  --fx-orb-c: rgba(110, 163, 17, 0.12);
+  --fx-scan: rgba(15, 23, 42, 0.02);
+}

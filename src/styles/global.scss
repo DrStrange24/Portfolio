@@ -411,11 +411,12 @@ body {
         box-shadow: var(--card-shadow);
         border-radius: 12px;
         transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        color: var(--section-text-primary-color);
 
         &:hover {
           transform: translateY(-6px);
-          border-color: rgba(32, 240, 200, 0.5);
-          box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+          border-color: var(--accent-primary);
+          box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
         }
 
         .text-light {
@@ -429,7 +430,7 @@ body {
         .badge {
           background-color: rgba(32, 240, 200, 0.12) !important;
           color: var(--accent-primary);
-          border: 1px solid rgba(32, 240, 200, 0.35);
+          border: 1px solid var(--accent-primary);
           text-transform: uppercase;
           letter-spacing: 0.08em;
         }
@@ -452,11 +453,12 @@ body {
         box-shadow: var(--card-shadow);
         border-radius: 12px;
         transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        color: var(--section-text-primary-color);
 
         &:hover {
           transform: translateY(-6px);
-          border-color: rgba(32, 240, 200, 0.5);
-          box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+          border-color: var(--accent-primary);
+          box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
         }
 
         .text-light {
@@ -475,7 +477,7 @@ body {
         .badge {
           background-color: rgba(32, 240, 200, 0.12) !important;
           color: var(--accent-primary);
-          border: 1px solid rgba(32, 240, 200, 0.35);
+          border: 1px solid var(--accent-primary);
           text-transform: uppercase;
           letter-spacing: 0.08em;
         }
@@ -493,7 +495,7 @@ body {
           border-radius: 12px;
           box-shadow: var(--work-experience-projects-box-shadow);
           border: 1px solid var(--card-border-color);
-          background-color: rgba(10, 12, 15, 0.7);
+          background-color: var(--card-bg-color);
         }
       }
     }
