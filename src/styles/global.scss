@@ -440,6 +440,10 @@ body {
     .education-section {
       padding: 5rem 0;
 
+      .section-subtitle {
+        color: color-mix(in srgb, var(--section-text-primary-color) 78%, white 22%);
+      }
+
       .education-item {
         padding: 1.25rem 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -449,7 +453,8 @@ body {
         text-transform: uppercase;
         letter-spacing: 0.14em;
         font-size: 0.75rem;
-        color: var(--section-text-secondary-color);
+        color: color-mix(in srgb, var(--section-text-primary-color) 72%, white 28%);
+        font-weight: 600;
       }
 
       .education-detail h5 {
@@ -464,7 +469,11 @@ body {
 
       .education-detail p {
         margin-bottom: 0;
-        color: var(--section-text-primary-color);
+        color: color-mix(in srgb, var(--section-text-primary-color) 86%, white 14%);
+      }
+
+      .education-field {
+        color: color-mix(in srgb, var(--section-text-primary-color) 86%, white 14%) !important;
       }
 
       h2,

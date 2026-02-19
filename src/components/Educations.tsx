@@ -25,12 +25,12 @@ export const Educations = () => {
         </div>
         {education.map((item) => (
           <Row key={item.id} className="mb-4 education-item">
-            <Col md={3} className="text-muted education-date">
+            <Col md={3} className="education-date">
               <small>{item.dates}</small>
             </Col>
             <Col md={9} className="education-detail">
               <h5 className="text-light">{item.institution}</h5>
-              <p className="text-muted">{item.field}</p>
+              <p className="education-field">{item.field}</p>
             </Col>
           </Row>
         ))}
