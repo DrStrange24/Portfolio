@@ -2,12 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col, ListGroup, Form, Button } from "react-bootstrap";
 import { socialLinks } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faFileAlt,
-  faCode,
-  faLaptopCode,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFileAlt, faCode } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
@@ -15,17 +10,20 @@ import { Tooltip, useSpinner } from ".";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="contact-section section-gradient-bg" style={{ position: 'relative' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'rgba(10,16,30,0.65)', zIndex: 1 }} />
-      <Container style={{ position: 'relative', zIndex: 2 }}>
+    <section
+      id="contact"
+      className="contact-section section-gradient-bg aurora-surface"
+    >
+      <div className="section-theme-overlay" />
+      <Container>
         <div className="section-intro section-intro-center">
           <div>
-            <span className="section-kicker" style={{ color: 'var(--accent-secondary)' }}>Contact</span>
-            <h2 style={{ color: '#fff' }}>
+            <span className="section-kicker">Contact</span>
+            <h2>
               <FontAwesomeIcon icon={faEnvelope} className="me-2" />
-              Let's Connect
+              Let&apos;s Connect
             </h2>
-            <p className="section-subtitle" style={{ color: '#e0e6f0' }}>
+            <p className="section-subtitle">
               Open to opportunities and collaborations. Reach out directly or
               connect on the platforms below.
             </p>
@@ -33,7 +31,7 @@ export const Contact = () => {
         </div>
 
         <Row className="contact-grid">
-          <Col lg={5} className="contact-panel" style={{ color: '#fff' }}>
+          <Col lg={5} className="contact-panel">
             <ListGroup variant="flush" className="contact-info">
               <ListGroup.Item>
                 <strong>Email:</strong>{" "}
@@ -50,7 +48,7 @@ export const Contact = () => {
             </ListGroup>
 
             <div className="contact-links">
-              <h3 style={{ color: '#fff' }}>Find Me Online</h3>
+              <h3>Find Me Online</h3>
               <ul className="list-inline">
                 <li className="list-inline-item">
                   <a
@@ -99,7 +97,7 @@ export const Contact = () => {
               </ul>
             </div>
           </Col>
-          <Col lg={7} className="contact-panel" style={{ color: '#fff' }}>
+          <Col lg={7} className="contact-panel">
             <AnonymousFeedback />
           </Col>
         </Row>

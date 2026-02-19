@@ -5,13 +5,16 @@ import { projects } from "../data";
 
 export const Projects = () => {
   return (
-    <section id="projects" className="section-bg-primary projects-section section-gradient-bg">
-      <div style={{ position: 'absolute', inset: 0, background: 'rgba(10,16,30,0.65)', zIndex: 1 }} />
-      <Container style={{ position: 'relative', zIndex: 2 }}>
+    <section
+      id="projects"
+      className="section-bg-primary projects-section section-gradient-bg aurora-surface"
+    >
+      <div className="section-theme-overlay" />
+      <Container>
         <div className="section-intro">
           <div>
             <span className="section-kicker">Selected Work</span>
-            <h2 className="text-light">
+            <h2>
               <FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Projects
             </h2>
             <p className="section-subtitle">

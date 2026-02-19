@@ -13,6 +13,16 @@
   /* Cyan 500 */
   --accent-tertiary: #f59e42;
   /* Orange 400 */
+  --gradient-1: #2647a9;
+  --gradient-2: #0b8ac0;
+  --gradient-3: #11a69a;
+  --gradient-text-start: #67a2ff;
+  --gradient-text-end: #4de0da;
+  --section-overlay: rgba(3, 9, 22, 0.58);
+  --section-overlay-strong: rgba(2, 8, 20, 0.7);
+  --aurora-a: rgba(74, 137, 255, 0.34);
+  --aurora-b: rgba(24, 198, 255, 0.28);
+  --aurora-c: rgba(69, 230, 193, 0.24);
   --on-accent-primary: #041310;
   --on-accent-tertiary: #08140f;
 
@@ -58,6 +68,16 @@
   --accent-primary: #6366f1;
   --accent-secondary: #06b6d4;
   --accent-tertiary: #f59e42;
+  --gradient-1: #2647a9;
+  --gradient-2: #0b8ac0;
+  --gradient-3: #11a69a;
+  --gradient-text-start: #67a2ff;
+  --gradient-text-end: #4de0da;
+  --section-overlay: rgba(3, 9, 22, 0.58);
+  --section-overlay-strong: rgba(2, 8, 20, 0.7);
+  --aurora-a: rgba(74, 137, 255, 0.34);
+  --aurora-b: rgba(24, 198, 255, 0.28);
+  --aurora-c: rgba(69, 230, 193, 0.24);
   --on-accent-primary: #041310;
   --on-accent-tertiary: #08140f;
 
@@ -103,12 +123,22 @@
   --accent-primary: #6366f1;
   --accent-secondary: #06b6d4;
   --accent-tertiary: #f59e42;
+  --gradient-1: #dbecff;
+  --gradient-2: #b3e8ff;
+  --gradient-3: #c4f8ef;
+  --gradient-text-start: #2f59c2;
+  --gradient-text-end: #007f98;
+  --section-overlay: rgba(255, 255, 255, 0.32);
+  --section-overlay-strong: rgba(255, 255, 255, 0.5);
+  --aurora-a: rgba(68, 132, 255, 0.18);
+  --aurora-b: rgba(15, 168, 220, 0.2);
+  --aurora-c: rgba(40, 177, 153, 0.18);
   --on-accent-primary: #f8fafc;
   --on-accent-tertiary: #0b1f12;
 
   --nav-bg: rgba(246, 249, 252, 0.9);
   --nav-text: #1f2937;
-  --nav-text-active: #0f9b7b;
+  --nav-text-active: #0f7cb1;
   --nav-border-color: rgba(15, 23, 42, 0.12);
   --nav-bg-icon-color: rgba(238, 242, 247, 0.95);
   --nav-bg-icon-hover-color: #0f172a;
@@ -118,12 +148,12 @@
   --section-bg-primary-color: rgba(255, 255, 255, 0.92);
   --section-bg-secondary-color: rgba(245, 248, 252, 0.96);
   --section-text-primary-color: #111827;
-  --section-text-secondary-color: #4b5563;
+  --section-text-secondary-color: #374151;
 
   --section-dropdown-bg-color: rgba(255, 255, 255, 0.98);
 
   --card-bg-color: rgba(255, 255, 255, 0.92);
-  --card-border-color: rgba(15, 155, 123, 0.18);
+  --card-border-color: rgba(47, 89, 194, 0.2);
   --card-shadow: 0 16px 40px rgba(15, 23, 42, 0.16);
 
   --work-experience-projects-box-shadow: 0 16px 36px rgba(15, 23, 42, 0.18);

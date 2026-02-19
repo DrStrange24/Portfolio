@@ -7,14 +7,14 @@ export const WorkHistory = () => {
   return (
     <section
       id="work-history"
-      className="section-bg-secondary work-experience-section section-gradient-bg"
+      className="section-bg-secondary work-experience-section section-gradient-bg aurora-surface"
     >
-      <div style={{ position: 'absolute', inset: 0, background: 'rgba(10,16,30,0.65)', zIndex: 1 }} />
-      <Container style={{ position: 'relative', zIndex: 2 }}>
+      <div className="section-theme-overlay" />
+      <Container>
         <div className="section-intro">
           <div>
             <span className="section-kicker">Career</span>
-            <h2 className="text-light">
+            <h2>
               <FontAwesomeIcon icon={faBriefcase} className="me-2" /> Work
               Experience
             </h2>
@@ -73,12 +73,10 @@ const WorkExperienceCard = ({
           </a>
         </Card.Subtitle>
 
-        {/* Dates and Duration on Separate Lines */}
         <Card.Text className="text-muted" style={{ fontSize: "0.9rem" }}>
           {dates} ({duration})
         </Card.Text>
 
-        {/* Projects */}
         {projects.map((project, index) => (
           <div key={index} className="projects mb-3">
             <h5 className="text-light">{project.projectTitle}</h5>

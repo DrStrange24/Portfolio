@@ -7,14 +7,14 @@ export const Educations = () => {
   return (
     <section
       id="educations"
-      className="education-section section-bg-secondary section-gradient-bg"
+      className="education-section section-bg-secondary section-gradient-bg aurora-surface"
     >
-      <div style={{ position: 'absolute', inset: 0, background: 'rgba(10,16,30,0.65)', zIndex: 1 }} />
-      <Container style={{ position: 'relative', zIndex: 2 }}>
+      <div className="section-theme-overlay" />
+      <Container>
         <div className="section-intro">
           <div>
             <span className="section-kicker">Background</span>
-            <h2 className="text-light">
+            <h2>
               <FontAwesomeIcon icon={faGraduationCap} className="me-2" />
               Education
             </h2>
