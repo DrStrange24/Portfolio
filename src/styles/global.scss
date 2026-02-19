@@ -8,8 +8,15 @@ body {
   background-image: radial-gradient(1200px circle at 20% 10%,
       var(--page-glow),
       transparent 60%),
+    radial-gradient(900px circle at 80% 0%,
+      rgba(255, 138, 61, 0.08),
+      transparent 55%),
+    repeating-linear-gradient(90deg,
+      rgba(255, 255, 255, 0.03) 0 1px,
+      transparent 1px 120px),
     linear-gradient(180deg, var(--background-color), var(--background-color-end));
   transition: background-color 0.3s, color 0.3s;
+  letter-spacing: 0.01em;
 
   section {
     scroll-margin-top: 50px;
@@ -18,22 +25,34 @@ body {
   .navbar {
     background-color: var(--nav-bg) !important;
     border-bottom: 1px solid var(--nav-border-color);
+    backdrop-filter: saturate(1.1) blur(6px);
 
     .navbar-brand {
       font-family: var(--font-display);
-      letter-spacing: 0.02em;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
 
     .nav-name {
       color: var(--nav-text);
-      margin-right: 200px;
+      margin-right: 160px;
+      font-weight: 600;
     }
 
     .nav-link {
       color: var(--nav-text);
       font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.8rem;
+      position: relative;
+      padding-bottom: 0.35rem;
 
       &.active {
+        color: var(--nav-text-active);
+      }
+
+      &:hover {
         color: var(--nav-text-active);
       }
     }
@@ -41,11 +60,15 @@ body {
     .theme-icon-button {
       background-color: var(--nav-bg-icon-color);
       color: var(--nav-icon-color);
-      border-radius: 50%;
+      border-radius: 10px;
+      border: 1px solid var(--nav-border-color);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
 
       &:hover {
         background-color: var(--nav-bg-icon-hover-color);
         color: var(--nav-icon-hover-color);
+        transform: translate(-2px, -2px);
+        box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
       }
     }
 
@@ -79,14 +102,26 @@ body {
       letter-spacing: -0.01em;
     }
 
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      line-height: 1.05;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      letter-spacing: 0.01em;
+    }
+
     .section-bg-primary {
       background-color: var(--section-bg-primary-color);
       color: var(--section-text-primary-color);
+      border-top: 1px solid var(--card-border-color);
     }
 
     .section-bg-secondary {
       background-color: var(--section-bg-secondary-color);
       color: var(--section-text-secondary-color);
+      border-top: 1px solid var(--card-border-color);
     }
 
     .contact-section {
@@ -110,10 +145,10 @@ body {
 
       .contact-info {
         background-color: var(--card-bg-color);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 1rem;
         box-shadow: var(--card-shadow);
-        border: 1px solid var(--card-border-color);
+        border: 2px solid var(--card-border-color);
         color: var(--section-text-primary-color);
 
         .list-group-item {
@@ -155,7 +190,10 @@ body {
       .accordion-button {
         background-color: var(--card-bg-color);
         color: var(--section-text-primary-color);
-        border: 1px solid var(--card-border-color);
+        border: 2px solid var(--card-border-color);
+        border-radius: 10px !important;
+        font-weight: 600;
+        letter-spacing: 0.02em;
 
         &::after {
           background-color: var(--section-dropdown-bg-color);
@@ -213,8 +251,15 @@ body {
 
       .project-card {
         background-color: var(--card-bg-color);
-        border: 1px solid var(--card-border-color);
+        border: 2px solid var(--card-border-color);
         box-shadow: var(--card-shadow);
+        border-radius: 12px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover {
+          transform: translate(-4px, -4px);
+          box-shadow: 14px 14px 0 rgba(0, 0, 0, 0.35);
+        }
 
         .text-light {
           color: var(--section-text-primary-color) !important;
@@ -225,8 +270,11 @@ body {
         }
 
         .badge {
-          background-color: var(--accent-tertiary) !important;
-          color: var(--on-accent-tertiary);
+          background-color: transparent !important;
+          color: var(--accent-tertiary);
+          border: 1.5px solid var(--accent-tertiary);
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
         }
       }
     }
@@ -243,8 +291,15 @@ body {
 
       .work-experience-card {
         background-color: var(--card-bg-color);
-        border: 1px solid var(--card-border-color);
+        border: 2px solid var(--card-border-color);
         box-shadow: var(--card-shadow);
+        border-radius: 12px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover {
+          transform: translate(-4px, -4px);
+          box-shadow: 14px 14px 0 rgba(0, 0, 0, 0.35);
+        }
 
         .text-light {
           color: var(--section-text-primary-color) !important;
@@ -260,8 +315,11 @@ body {
         }
 
         .badge {
-          background-color: var(--accent-tertiary) !important;
-          color: var(--on-accent-tertiary);
+          background-color: transparent !important;
+          color: var(--accent-tertiary);
+          border: 1.5px solid var(--accent-tertiary);
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
         }
 
         .card-subtitle {
@@ -276,7 +334,7 @@ body {
           padding: 15px;
           border-radius: 12px;
           box-shadow: var(--work-experience-projects-box-shadow);
-          border: 1px solid var(--card-border-color);
+          border: 2px solid var(--card-border-color);
         }
       }
     }
@@ -334,12 +392,35 @@ body {
     background-color: var(--accent-primary);
     border-color: var(--accent-primary);
     color: var(--on-accent-primary);
+    border-width: 2px;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 
     &:hover,
     &:focus {
       background-color: var(--accent-secondary);
       border-color: var(--accent-secondary);
       color: var(--on-accent-primary);
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .form-control,
+  .form-select {
+    background-color: var(--card-bg-color);
+    border: 2px solid var(--card-border-color);
+    color: var(--section-text-primary-color);
+    border-radius: 10px;
+    box-shadow: none;
+
+    &:focus {
+      border-color: var(--accent-primary);
+      box-shadow: 0 0 0 3px rgba(255, 138, 61, 0.2);
     }
   }
 }

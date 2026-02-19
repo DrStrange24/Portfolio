@@ -1,80 +1,80 @@
 :root {
-  --font-sans: "Source Sans 3", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Space Grotesk", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
 
-  --background-color: #f5f0ea;
-  --background-color-end: #efe6dc;
-  --page-glow: #fff3e3;
-  --text-color: #2b2620;
+  --background-color: #f6f4ef;
+  --background-color-end: #e9e3d9;
+  --page-glow: #fff2db;
+  --text-color: #1b1a16;
 
-  --accent-primary: #c65a2e;
-  --accent-secondary: #2f6b5f;
-  --accent-tertiary: #b0833a;
-  --on-accent-primary: #fdf7f1;
-  --on-accent-tertiary: #2b2620;
+  --accent-primary: #ff7a1a;
+  --accent-secondary: #1f9d7a;
+  --accent-tertiary: #f5b43a;
+  --on-accent-primary: #140f0a;
+  --on-accent-tertiary: #231a0f;
 
-  --nav-bg: #f6f1eb;
-  --nav-text: #2b2620;
+  --nav-bg: #f6f4ef;
+  --nav-text: #1b1a16;
   --nav-text-active: var(--accent-primary);
-  --nav-border-color: rgba(43, 38, 32, 0.08);
-  --nav-bg-icon-color: #efe6dc;
-  --nav-bg-icon-hover-color: #2b2620;
-  --nav-icon-color: #2b2620;
-  --nav-icon-hover-color: #fdf7f1;
+  --nav-border-color: rgba(27, 26, 22, 0.1);
+  --nav-bg-icon-color: #efe7db;
+  --nav-bg-icon-hover-color: #1b1a16;
+  --nav-icon-color: #1b1a16;
+  --nav-icon-hover-color: #f6f4ef;
 
-  --section-bg-primary-color: #f6f1eb;
-  --section-bg-secondary-color: #fffaf5;
-  --section-text-primary-color: #2b2620;
-  --section-text-secondary-color: #5f554a;
+  --section-bg-primary-color: #f7f3ec;
+  --section-bg-secondary-color: #fff9f1;
+  --section-text-primary-color: #1b1a16;
+  --section-text-secondary-color: #5a5146;
 
-  --section-dropdown-bg-color: #efe6dc;
+  --section-dropdown-bg-color: #efe7db;
 
-  --card-bg-color: #fffaf5;
-  --card-border-color: rgba(43, 38, 32, 0.08);
-  --card-shadow: 0px 12px 30px rgba(43, 38, 32, 0.12);
+  --card-bg-color: #fff9f1;
+  --card-border-color: rgba(27, 26, 22, 0.14);
+  --card-shadow: 10px 10px 0 rgba(27, 26, 22, 0.14);
 
-  --work-experience-projects-box-shadow: 0px 10px 24px rgba(43, 38, 32, 0.12);
+  --work-experience-projects-box-shadow: 8px 8px 0 rgba(27, 26, 22, 0.14);
 
-  --scrollbar-track: #e2d6c7;
+  --scrollbar-track: #e5dbcf;
   --scrollbar-thumb: #b59a7b;
   --scrollbar-thumb-hover: #9c7f5b;
 }
 
 [data-theme="dark"] {
-  --background-color: #1f1b17;
-  --background-color-end: #151310;
-  --page-glow: #2a241d;
-  --text-color: #f4efe8;
+  --background-color: #12110e;
+  --background-color-end: #0b0a08;
+  --page-glow: #1c1914;
+  --text-color: #f5efe7;
 
-  --accent-primary: #d97a4e;
-  --accent-secondary: #4e8b7f;
-  --accent-tertiary: #c79a53;
-  --on-accent-primary: #1b1410;
-  --on-accent-tertiary: #1b1410;
+  --accent-primary: #ff8a3d;
+  --accent-secondary: #5fd6a4;
+  --accent-tertiary: #f5c04a;
+  --on-accent-primary: #1b120a;
+  --on-accent-tertiary: #1b120a;
 
-  --nav-bg: #1f1b17;
-  --nav-text: #f4efe8;
+  --nav-bg: #12110e;
+  --nav-text: #f5efe7;
   --nav-text-active: var(--accent-primary);
-  --nav-border-color: rgba(244, 239, 232, 0.08);
-  --nav-bg-icon-color: #2a251f;
-  --nav-bg-icon-hover-color: #f4efe8;
-  --nav-icon-color: #f4efe8;
-  --nav-icon-hover-color: #2a251f;
+  --nav-border-color: rgba(245, 239, 231, 0.12);
+  --nav-bg-icon-color: #1e1a14;
+  --nav-bg-icon-hover-color: #f5efe7;
+  --nav-icon-color: #f5efe7;
+  --nav-icon-hover-color: #1e1a14;
 
-  --section-bg-primary-color: #23201b;
-  --section-bg-secondary-color: #1b1915;
-  --section-text-primary-color: #f4efe8;
-  --section-text-secondary-color: #c9c1b6;
+  --section-bg-primary-color: #181612;
+  --section-bg-secondary-color: #14120f;
+  --section-text-primary-color: #f5efe7;
+  --section-text-secondary-color: #c6bdb1;
 
-  --section-dropdown-bg-color: #2b2721;
+  --section-dropdown-bg-color: #201c16;
 
-  --card-bg-color: #25211c;
-  --card-border-color: rgba(244, 239, 232, 0.08);
-  --card-shadow: 0px 14px 34px rgba(0, 0, 0, 0.45);
+  --card-bg-color: #1b1914;
+  --card-border-color: rgba(245, 239, 231, 0.14);
+  --card-shadow: 10px 10px 0 rgba(0, 0, 0, 0.55);
 
-  --work-experience-projects-box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.5);
+  --work-experience-projects-box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.45);
 
-  --scrollbar-track: #2a251f;
+  --scrollbar-track: #1d1914;
   --scrollbar-thumb: #4f463d;
   --scrollbar-thumb-hover: #6a5e51;
 }
