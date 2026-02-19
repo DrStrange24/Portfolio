@@ -30,75 +30,79 @@ export const Contact = () => {
           </div>
         </div>
 
-        <Row className="contact-grid">
-          <Col lg={5} className="contact-panel">
-            <ListGroup variant="flush" className="contact-info">
-              <ListGroup.Item>
-                <strong>Email:</strong>{" "}
-                <a href="mailto:jbrnnbacuta@gmail.com">jbrnnbacuta@gmail.com</a>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <strong>Phone:</strong>{" "}
-                <a href="tel:+639636269523">+63 (963) 626-9523</a>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <strong>Location:</strong> Manhoy, Dao, Capiz, Western Visayas,
-                Philippines 5810
-              </ListGroup.Item>
-            </ListGroup>
+        <Row className="contact-grid gy-4 gx-lg-4 align-items-stretch">
+          <Col lg={5}>
+            <div className="contact-panel h-100">
+              <ListGroup variant="flush" className="contact-info">
+                <ListGroup.Item>
+                  <strong>Email:</strong>{" "}
+                  <a href="mailto:jbrnnbacuta@gmail.com">jbrnnbacuta@gmail.com</a>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <strong>Phone:</strong>{" "}
+                  <a href="tel:+639636269523">+63 (963) 626-9523</a>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <strong>Location:</strong> Manhoy, Dao, Capiz, Western Visayas,
+                  Philippines 5810
+                </ListGroup.Item>
+              </ListGroup>
 
-            <div className="contact-links">
-              <h3>Find Me Online</h3>
-              <ul className="list-inline">
-                <li className="list-inline-item">
-                  <a
-                    href={socialLinks.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-decoration-none"
-                  >
-                    <FontAwesomeIcon icon={faGithub} className="me-2" />
-                    GitHub
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a
-                    href={socialLinks.leetcodeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-decoration-none"
-                  >
-                    <FontAwesomeIcon icon={faCode} className="me-2" />
-                    LeetCode
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a
-                    href={socialLinks.resumeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-decoration-none"
-                  >
-                    <FontAwesomeIcon icon={faFileAlt} className="me-2" />
-                    Resume
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a
-                    href={socialLinks.linkedinUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-decoration-none"
-                  >
-                    <FontAwesomeIcon icon={faLinkedin} className="me-2" />
-                    LinkedIn
-                  </a>
-                </li>
-              </ul>
+              <div className="contact-links">
+                <h3>Find Me Online</h3>
+                <ul className="list-inline">
+                  <li className="list-inline-item">
+                    <a
+                      href={socialLinks.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none"
+                    >
+                      <FontAwesomeIcon icon={faGithub} className="me-2" />
+                      GitHub
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a
+                      href={socialLinks.leetcodeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none"
+                    >
+                      <FontAwesomeIcon icon={faCode} className="me-2" />
+                      LeetCode
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a
+                      href={socialLinks.resumeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none"
+                    >
+                      <FontAwesomeIcon icon={faFileAlt} className="me-2" />
+                      Resume
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a
+                      href={socialLinks.linkedinUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none"
+                    >
+                      <FontAwesomeIcon icon={faLinkedin} className="me-2" />
+                      LinkedIn
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </Col>
-          <Col lg={7} className="contact-panel">
-            <AnonymousFeedback />
+          <Col lg={7}>
+            <div className="contact-panel h-100">
+              <AnonymousFeedback />
+            </div>
           </Col>
         </Row>
       </Container>
