@@ -10,9 +10,10 @@ export const Certificates = () => {
   return (
     <section
       id="certificates"
-      className="section-bg-primary certificate-section"
+      className="section-bg-primary certificate-section section-gradient-bg"
     >
-      <Container>
+      <div style={{ position: 'absolute', inset: 0, background: 'rgba(10,16,30,0.65)', zIndex: 1 }} />
+      <Container style={{ position: 'relative', zIndex: 2 }}>
         <div className="section-intro section-intro-center">
           <div>
             <span className="section-kicker">Credentials</span>

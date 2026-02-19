@@ -15,16 +15,17 @@ import { Tooltip, useSpinner } from ".";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="contact-section">
-      <Container>
+    <section id="contact" className="contact-section section-gradient-bg" style={{ position: 'relative' }}>
+      <div style={{ position: 'absolute', inset: 0, background: 'rgba(10,16,30,0.65)', zIndex: 1 }} />
+      <Container style={{ position: 'relative', zIndex: 2 }}>
         <div className="section-intro section-intro-center">
           <div>
-            <span className="section-kicker">Contact</span>
-            <h2>
+            <span className="section-kicker" style={{ color: 'var(--accent-secondary)' }}>Contact</span>
+            <h2 style={{ color: '#fff' }}>
               <FontAwesomeIcon icon={faEnvelope} className="me-2" />
               Let's Connect
             </h2>
-            <p className="section-subtitle">
+            <p className="section-subtitle" style={{ color: '#e0e6f0' }}>
               Open to opportunities and collaborations. Reach out directly or
               connect on the platforms below.
             </p>
@@ -32,7 +33,7 @@ export const Contact = () => {
         </div>
 
         <Row className="contact-grid">
-          <Col lg={5} className="contact-panel">
+          <Col lg={5} className="contact-panel" style={{ color: '#fff' }}>
             <ListGroup variant="flush" className="contact-info">
               <ListGroup.Item>
                 <strong>Email:</strong>{" "}
@@ -49,7 +50,7 @@ export const Contact = () => {
             </ListGroup>
 
             <div className="contact-links">
-              <h3>Find Me Online</h3>
+              <h3 style={{ color: '#fff' }}>Find Me Online</h3>
               <ul className="list-inline">
                 <li className="list-inline-item">
                   <a
@@ -98,7 +99,7 @@ export const Contact = () => {
               </ul>
             </div>
           </Col>
-          <Col lg={7} className="contact-panel">
+          <Col lg={7} className="contact-panel" style={{ color: '#fff' }}>
             <AnonymousFeedback />
           </Col>
         </Row>

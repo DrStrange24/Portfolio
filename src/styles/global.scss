@@ -15,7 +15,23 @@
 
 // Example: gradient background for section
 .section-gradient-bg {
-  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 60%, var(--accent-tertiary) 100%);
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 50%, var(--accent-tertiary) 100%);
+}
+
+:root {
+  --section-gradient: linear-gradient(135deg, #6366f1 0%, #06b6d4 50%, #f59e42 100%);
+}
+
+[data-theme="dark"] {
+  --section-gradient: linear-gradient(135deg, #6366f1 0%, #06b6d4 50%, #f59e42 100%);
+}
+
+[data-theme="light"] {
+  --section-gradient: linear-gradient(135deg, #6366f1 0%, #06b6d4 50%, #f59e42 100%);
+}
+
+.section-gradient-bg {
+  background: var(--section-gradient);
 }
 
 body {

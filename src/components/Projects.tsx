@@ -5,8 +5,9 @@ import { projects } from "../data";
 
 export const Projects = () => {
   return (
-    <section id="projects" className="section-bg-primary projects-section">
-      <Container>
+    <section id="projects" className="section-bg-primary projects-section section-gradient-bg">
+      <div style={{ position: 'absolute', inset: 0, background: 'rgba(10,16,30,0.65)', zIndex: 1 }} />
+      <Container style={{ position: 'relative', zIndex: 2 }}>
         <div className="section-intro">
           <div>
             <span className="section-kicker">Selected Work</span>

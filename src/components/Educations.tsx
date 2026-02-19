@@ -7,9 +7,10 @@ export const Educations = () => {
   return (
     <section
       id="educations"
-      className="education-section section-bg-secondary"
+      className="education-section section-bg-secondary section-gradient-bg"
     >
-      <Container>
+      <div style={{ position: 'absolute', inset: 0, background: 'rgba(10,16,30,0.65)', zIndex: 1 }} />
+      <Container style={{ position: 'relative', zIndex: 2 }}>
         <div className="section-intro">
           <div>
             <span className="section-kicker">Background</span>
