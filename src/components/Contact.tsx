@@ -15,21 +15,25 @@ import { Tooltip, useSpinner } from ".";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="contact-section py-5">
+    <section id="contact" className="contact-section">
       <Container>
-        <Row>
-          <Col md={8} lg={8} className="mx-auto text-center">
+        <div className="section-intro section-intro-center">
+          <div>
+            <span className="section-kicker">Contact</span>
             <h2>
               <FontAwesomeIcon icon={faEnvelope} className="me-2" />
               Let's Connect
             </h2>
-            <p>
+            <p className="section-subtitle">
               Open to opportunities and collaborations. Reach out directly or
               connect on the platforms below.
             </p>
+          </div>
+        </div>
 
-            {/* Contact Info */}
-            <ListGroup variant="flush" className="contact-info text-start mt-4">
+        <Row className="contact-grid">
+          <Col lg={5} className="contact-panel">
+            <ListGroup variant="flush" className="contact-info">
               <ListGroup.Item>
                 <strong>Email:</strong>{" "}
                 <a href="mailto:jbrnnbacuta@gmail.com">jbrnnbacuta@gmail.com</a>
@@ -44,60 +48,59 @@ export const Contact = () => {
               </ListGroup.Item>
             </ListGroup>
 
-            {/* Professional Links */}
-            <div className="contact-links mt-4">
+            <div className="contact-links">
               <h3>Find Me Online</h3>
               <ul className="list-inline">
-                <li className="list-inline-item mx-3">
+                <li className="list-inline-item">
                   <a
                     href={socialLinks.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-decoration-none text-dark github-link"
+                    className="text-decoration-none"
                   >
                     <FontAwesomeIcon icon={faGithub} className="me-2" />
                     GitHub
                   </a>
                 </li>
-                <li className="list-inline-item mx-3">
+                <li className="list-inline-item">
                   <a
                     href={socialLinks.leetcodeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-decoration-none text-warning"
+                    className="text-decoration-none"
                   >
                     <FontAwesomeIcon icon={faCode} className="me-2" />
                     LeetCode
                   </a>
                 </li>
-                <li className="list-inline-item mx-3">
+                <li className="list-inline-item">
                   <a
                     href={socialLinks.resumeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-decoration-none text-success"
+                    className="text-decoration-none"
                   >
                     <FontAwesomeIcon icon={faFileAlt} className="me-2" />
                     Resume
                   </a>
                 </li>
-                <li className="list-inline-item mx-3">
+                <li className="list-inline-item">
                   <a
                     href={socialLinks.linkedinUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-decoration-none text-primary"
+                    className="text-decoration-none"
                   >
                     <FontAwesomeIcon icon={faLinkedin} className="me-2" />
                     LinkedIn
                   </a>
                 </li>
-                <li className="list-inline-item mx-3">
+                <li className="list-inline-item">
                   <a
                     href={socialLinks.turingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-decoration-none text-dark"
+                    className="text-decoration-none"
                   >
                     <FontAwesomeIcon icon={faLaptopCode} className="me-2" />
                     Turing Profile
@@ -105,6 +108,8 @@ export const Contact = () => {
                 </li>
               </ul>
             </div>
+          </Col>
+          <Col lg={7} className="contact-panel">
             <AnonymousFeedback />
           </Col>
         </Row>
@@ -150,7 +155,7 @@ const AnonymousFeedback = () => {
   };
 
   return (
-    <div className="mt-5">
+    <div className="feedback-panel">
       <Tooltip tooltip="All feedback is anonymous. Share anything that would make this portfolio stronger.">
         <h3>Anonymous Feedback</h3>
       </Tooltip>

@@ -7,13 +7,21 @@ export const WorkHistory = () => {
   return (
     <section
       id="work-history"
-      className="py-5 section-bg-secondary work-experience-section"
+      className="section-bg-secondary work-experience-section"
     >
       <Container>
-        <h2 className="text-light mb-4">
-          <FontAwesomeIcon icon={faBriefcase} className="me-2" /> Work
-          Experience
-        </h2>
+        <div className="section-intro">
+          <div>
+            <span className="section-kicker">Career</span>
+            <h2 className="text-light">
+              <FontAwesomeIcon icon={faBriefcase} className="me-2" /> Work
+              Experience
+            </h2>
+            <p className="section-subtitle">
+              Roles focused on delivering features, quality, and velocity.
+            </p>
+          </div>
+        </div>
         <Row>
           {workExperience.map((job) => (
             <Col md={12} key={job.id}>

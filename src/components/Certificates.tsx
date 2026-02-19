@@ -10,14 +10,20 @@ export const Certificates = () => {
   return (
     <section
       id="certificates"
-      className="py-5 section-bg-primary certificate-section"
+      className="section-bg-primary certificate-section"
     >
       <Container>
-        <h2 className="text-center mb-4">
-          {" "}
-          <FontAwesomeIcon icon={faAward} className="me-2" />
-          Certificates
-        </h2>
+        <div className="section-intro section-intro-center">
+          <div>
+            <span className="section-kicker">Credentials</span>
+            <h2>
+              <FontAwesomeIcon icon={faAward} className="me-2" /> Certificates
+            </h2>
+            <p className="section-subtitle">
+              Verified training and certifications that back up my skills.
+            </p>
+          </div>
+        </div>
         <Accordion defaultActiveKey="0">
           {certificates.map((certificate: CertificateProps, index) => (
             <Accordion.Item eventKey={index.toString()} key={certificate.id}>
@@ -61,7 +67,7 @@ const CertificateCard = ({
   };
 
   return (
-    <Card className="mb-3">
+    <Card className="mb-3 certificate-card">
       {thumbnail && <Card.Img variant="top" src={thumbnail} alt={title} />}
       <Card.Body>
         <Card.Title>{title}</Card.Title>

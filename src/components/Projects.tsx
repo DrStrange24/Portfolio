@@ -5,11 +5,19 @@ import { projects } from "../data";
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-5 section-bg-primary projects-section">
+    <section id="projects" className="section-bg-primary projects-section">
       <Container>
-        <h2 className="text-light mb-4">
-          <FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Projects
-        </h2>
+        <div className="section-intro">
+          <div>
+            <span className="section-kicker">Selected Work</span>
+            <h2 className="text-light">
+              <FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Projects
+            </h2>
+            <p className="section-subtitle">
+              Production-ready builds across web apps, systems, and automation.
+            </p>
+          </div>
+        </div>
         <Row>
           {projects.map((project) => (
             <Col md={6} lg={4} key={project.id}>

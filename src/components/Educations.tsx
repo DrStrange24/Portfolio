@@ -7,20 +7,29 @@ export const Educations = () => {
   return (
     <section
       id="educations"
-      className="py-5 education-section section-bg-secondary"
+      className="education-section section-bg-secondary"
     >
       <Container>
-        <h2 className="text-light mb-4">
-          <FontAwesomeIcon icon={faGraduationCap} className="me-2" /> Education
-        </h2>
+        <div className="section-intro">
+          <div>
+            <span className="section-kicker">Background</span>
+            <h2 className="text-light">
+              <FontAwesomeIcon icon={faGraduationCap} className="me-2" />
+              Education
+            </h2>
+            <p className="section-subtitle">
+              Formal training that shaped my technical foundation.
+            </p>
+          </div>
+        </div>
         {education.map((item) => (
-          <Row key={item.id} className="mb-4">
-            <Col md={3} className="text-muted">
+          <Row key={item.id} className="mb-4 education-item">
+            <Col md={3} className="text-muted education-date">
               <small>{item.dates}</small>
             </Col>
-            <Col md={9}>
-              <h5 className="text-muted">{item.institution}</h5>
-              <p className="text-light">{item.field}</p>
+            <Col md={9} className="education-detail">
+              <h5 className="text-light">{item.institution}</h5>
+              <p className="text-muted">{item.field}</p>
             </Col>
           </Row>
         ))}

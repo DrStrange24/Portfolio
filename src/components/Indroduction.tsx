@@ -1,27 +1,40 @@
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import profileImage from "../assets/images/profile.jpg";
 
 export const Introduction = (): JSX.Element => {
   return (
-    <section id="about-me" className="py-5 section-bg-primary">
-      <Container className="mt-5">
+    <section id="about-me" className="section-bg-primary hero-section">
+      <Container className="hero-container">
         <Row className="align-items-center">
-          <Col md={4} className="text-center">
-            <Image src={profileImage} alt="profile image" roundedCircle fluid />
-          </Col>
-          <Col md={8}>
-            <h1>Jeremy Brynn Bacuta</h1>
-            <h3>Software Engineer</h3>
-            <p>
-              Software engineer with 2 years of full-stack experience across
-              C#, Java, Python, and React. Delivered web and desktop
-              applications over 4 years of project work, with strengths in API
-              integration, performance tuning, and clean UI. Known for
-              elevating code quality, collaborating with international teams,
-              and turning requirements into reliable, user-friendly features.
-              Eager to contribute to product teams that value craft, velocity,
-              and continuous learning.
+          <Col lg={6} className="hero-content">
+            <span className="hero-kicker">Software Engineer</span>
+            <h1>
+              Jeremy Brynn
+              <span className="hero-accent"> Bacuta</span>
+            </h1>
+            <p className="hero-lead">
+              I build fast, reliable web apps and internal tools. My focus is
+              full-stack delivery, API integration, and performance work that
+              turns requirements into clean, scalable experiences.
             </p>
+            <div className="hero-cta">
+              <Button href="#projects" variant="primary" className="me-3">
+                View Projects
+              </Button>
+              <Button href="#contact" variant="outline-light">
+                Let&apos;s Connect
+              </Button>
+            </div>
+            <div className="hero-meta">
+              <span>4+ years projects</span>
+              <span>Full-stack</span>
+              <span>React • C# • Java</span>
+            </div>
+          </Col>
+          <Col lg={6} className="hero-media">
+            <div className="hero-image-frame">
+              <Image src={profileImage} alt="profile image" rounded fluid />
+            </div>
           </Col>
         </Row>
       </Container>

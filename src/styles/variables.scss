@@ -1,80 +1,92 @@
 :root {
-  --font-sans: "Space Grotesk", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-sans: "Manrope", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Sora", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
-  --background-color: #f6f4ef;
-  --background-color-end: #e9e3d9;
-  --page-glow: #fff2db;
-  --text-color: #1b1a16;
+  --background-color: #0b0d10;
+  --background-color-end: #08090c;
+  --page-glow: #14201d;
+  --text-color: #f1f5f9;
 
-  --accent-primary: #ff7a1a;
-  --accent-secondary: #1f9d7a;
-  --accent-tertiary: #f5b43a;
-  --on-accent-primary: #140f0a;
-  --on-accent-tertiary: #231a0f;
+  --accent-primary: #20f0c8;
+  --accent-secondary: #19c7f0;
+  --accent-tertiary: #a4ff1d;
+  --on-accent-primary: #041310;
+  --on-accent-tertiary: #08140f;
 
-  --nav-bg: #f6f4ef;
-  --nav-text: #1b1a16;
+  --nav-bg: rgba(10, 12, 15, 0.85);
+  --nav-text: #e8f0f2;
   --nav-text-active: var(--accent-primary);
-  --nav-border-color: rgba(27, 26, 22, 0.1);
-  --nav-bg-icon-color: #efe7db;
-  --nav-bg-icon-hover-color: #1b1a16;
-  --nav-icon-color: #1b1a16;
-  --nav-icon-hover-color: #f6f4ef;
+  --nav-border-color: rgba(255, 255, 255, 0.12);
+  --nav-bg-icon-color: rgba(15, 18, 22, 0.9);
+  --nav-bg-icon-hover-color: #e8f0f2;
+  --nav-icon-color: #e8f0f2;
+  --nav-icon-hover-color: #0b0d10;
 
-  --section-bg-primary-color: #f7f3ec;
-  --section-bg-secondary-color: #fff9f1;
-  --section-text-primary-color: #1b1a16;
-  --section-text-secondary-color: #5a5146;
+  --section-bg-primary-color: rgba(12, 15, 18, 0.85);
+  --section-bg-secondary-color: rgba(10, 13, 16, 0.9);
+  --section-text-primary-color: #f1f5f9;
+  --section-text-secondary-color: #a7b2bf;
 
-  --section-dropdown-bg-color: #efe7db;
+  --section-dropdown-bg-color: rgba(18, 22, 26, 0.95);
 
-  --card-bg-color: #fff9f1;
-  --card-border-color: rgba(27, 26, 22, 0.14);
-  --card-shadow: 10px 10px 0 rgba(27, 26, 22, 0.14);
+  --card-bg-color: rgba(15, 19, 24, 0.72);
+  --card-border-color: rgba(32, 240, 200, 0.22);
+  --card-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 
-  --work-experience-projects-box-shadow: 8px 8px 0 rgba(27, 26, 22, 0.14);
+  --work-experience-projects-box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
 
-  --scrollbar-track: #e5dbcf;
-  --scrollbar-thumb: #b59a7b;
-  --scrollbar-thumb-hover: #9c7f5b;
+  --scrollbar-track: #0f1317;
+  --scrollbar-thumb: #1f2b33;
+  --scrollbar-thumb-hover: #2b3a44;
+
+  --fx-grid: rgba(255, 255, 255, 0.04);
+  --fx-orb-a: rgba(32, 240, 200, 0.3);
+  --fx-orb-b: rgba(25, 199, 240, 0.26);
+  --fx-orb-c: rgba(164, 255, 29, 0.22);
+  --fx-scan: rgba(255, 255, 255, 0.02);
 }
 
 [data-theme="dark"] {
-  --background-color: #12110e;
-  --background-color-end: #0b0a08;
-  --page-glow: #1c1914;
-  --text-color: #f5efe7;
+  --background-color: #0b0d10;
+  --background-color-end: #08090c;
+  --page-glow: #14201d;
+  --text-color: #f1f5f9;
 
-  --accent-primary: #ff8a3d;
-  --accent-secondary: #5fd6a4;
-  --accent-tertiary: #f5c04a;
-  --on-accent-primary: #1b120a;
-  --on-accent-tertiary: #1b120a;
+  --accent-primary: #20f0c8;
+  --accent-secondary: #19c7f0;
+  --accent-tertiary: #a4ff1d;
+  --on-accent-primary: #041310;
+  --on-accent-tertiary: #08140f;
 
-  --nav-bg: #12110e;
-  --nav-text: #f5efe7;
+  --nav-bg: rgba(10, 12, 15, 0.85);
+  --nav-text: #e8f0f2;
   --nav-text-active: var(--accent-primary);
-  --nav-border-color: rgba(245, 239, 231, 0.12);
-  --nav-bg-icon-color: #1e1a14;
-  --nav-bg-icon-hover-color: #f5efe7;
-  --nav-icon-color: #f5efe7;
-  --nav-icon-hover-color: #1e1a14;
+  --nav-border-color: rgba(255, 255, 255, 0.12);
+  --nav-bg-icon-color: rgba(15, 18, 22, 0.9);
+  --nav-bg-icon-hover-color: #e8f0f2;
+  --nav-icon-color: #e8f0f2;
+  --nav-icon-hover-color: #0b0d10;
 
-  --section-bg-primary-color: #181612;
-  --section-bg-secondary-color: #14120f;
-  --section-text-primary-color: #f5efe7;
-  --section-text-secondary-color: #c6bdb1;
+  --section-bg-primary-color: rgba(12, 15, 18, 0.85);
+  --section-bg-secondary-color: rgba(10, 13, 16, 0.9);
+  --section-text-primary-color: #f1f5f9;
+  --section-text-secondary-color: #a7b2bf;
 
-  --section-dropdown-bg-color: #201c16;
+  --section-dropdown-bg-color: rgba(18, 22, 26, 0.95);
 
-  --card-bg-color: #1b1914;
-  --card-border-color: rgba(245, 239, 231, 0.14);
-  --card-shadow: 10px 10px 0 rgba(0, 0, 0, 0.55);
+  --card-bg-color: rgba(15, 19, 24, 0.72);
+  --card-border-color: rgba(32, 240, 200, 0.22);
+  --card-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 
-  --work-experience-projects-box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.45);
+  --work-experience-projects-box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
 
-  --scrollbar-track: #1d1914;
-  --scrollbar-thumb: #4f463d;
-  --scrollbar-thumb-hover: #6a5e51;
+  --scrollbar-track: #0f1317;
+  --scrollbar-thumb: #1f2b33;
+  --scrollbar-thumb-hover: #2b3a44;
+
+  --fx-grid: rgba(255, 255, 255, 0.04);
+  --fx-orb-a: rgba(32, 240, 200, 0.3);
+  --fx-orb-b: rgba(25, 199, 240, 0.26);
+  --fx-orb-c: rgba(164, 255, 29, 0.22);
+  --fx-scan: rgba(255, 255, 255, 0.02);
 }
