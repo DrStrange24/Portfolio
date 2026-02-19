@@ -396,9 +396,21 @@ body {
       .education-detail h5 {
         font-weight: 700;
         margin-bottom: 0.25rem;
-        color: var(--section-text-primary-color) !important;
+        background: var(--edu-gradient, linear-gradient(90deg, #20f0c8 0%, #19c7f0 100%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
         opacity: 1 !important;
         text-shadow: none !important;
+      }
+
+      :root {
+        --edu-gradient: linear-gradient(90deg, #20f0c8 0%, #19c7f0 100%);
+      }
+
+      [data-theme="light"] {
+        --edu-gradient: linear-gradient(90deg, #0f9b7b 0%, #157aa6 100%);
       }
 
       .education-detail p {
